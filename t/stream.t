@@ -55,11 +55,26 @@ sub iter {
 
 is_deeply([map { $_->num } iter(@objs)->all],[1,2,3,4], "found 4 objects");
 
-my $stream = KiokuDB::Stream::Objects ->new(
-  directory => $dir,
-  entry_stream => iter(@entries),
-);
+{
+    my $stream = KiokuDB::Stream::Objects ->new(
+        directory => $dir,
+        entry_stream => iter(@entries),
+    );
 
-is_deeply([map { $_->num } $stream->all],[1,2,3,4], "found 4 objects");
+    is_deeply([map { $_->num } $stream->all],[1,2,3,4], "found 4 objects");
+}
+
+{
+    my $s = $dir->new_scope;
+    my $one = $dir->lookup('one');
+
+    my $stream = $dir->grep(sub { 1 });
+
+    is_deeply([sort map { $_->num } $stream->all],[0,1,2,3,4], "found all objects");
+
+    lives_ok { $dir->delete($one) } "can delete previously live objects";
+
+    is_deeply([sort map { $_->num } $dir->root_set->all], [0,2,3,4], "really deleted");
+}
 
 done_testing;

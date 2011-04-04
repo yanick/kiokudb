@@ -66,9 +66,14 @@ sub next {
         $self->_scope( $self->directory->new_scope )
             unless $self->_no_scope;
 
-        $self->live_objects->register_entry( $_->id => $_, in_storage => 1 ) for @$entries;
+        for my $entry (@$entries) {
+            $self->live_objects->register_entry(
+                $entry->id => $entry,
+                in_storage => 1
+            ) unless $self->live_objects->id_to_entry($entry->id);
+        }
 
-        return [ $self->linker->register_and_expand_entries(@$entries) ];
+        return [ $self->linker->expand_objects(@$entries) ];
     } else {
         return [];
     }
