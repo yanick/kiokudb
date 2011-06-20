@@ -3,7 +3,7 @@
 package KiokuDB::Set;
 use Moose::Role 'requires', 'has' => { -as => "attr" }; # need a 'has' method
 
-use Moose::Util::TypeConstraints;
+use Moose::Util::TypeConstraints 'coerce', 'from', 'via';
 
 use Set::Object;
 
