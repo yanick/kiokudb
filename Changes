@@ -1,3 +1,8 @@
+0.52
+    - Fix an issue where streaming entries can sometimes cause them to
+      disappear.
+    - Fix overlap with the new 'union' keyword in Moose::Util::TypeConstraints.
+
 0.51
     - Die with an error when two objects try and register with the same ID but
       don't both do the KiokuDB::Role::ID::Content role.
