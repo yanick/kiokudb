@@ -36,7 +36,7 @@
             <h2><a name="high_level" href="#top">&uarr;</a>High Level API</h2>
 
             <p>The main API is provided by <tt><a
-                    href="http://search.cpan.org/perldoc?KiokuDB">KiokuDB.pm</a></tt>.
+                    href="https://metacpan.org/module/KiokuDB">KiokuDB.pm</a></tt>.
             This is the entry point into KiokuDB and is the API for users. It
             brings together all of the other components.</p>
 
@@ -58,9 +58,9 @@
             <h3><a name="linker" href="#top">&uarr;</a>The Linker</h3>
 
             <p>The <a
-                href="http://search.cpan.org/perldoc?KiokuDB::Linker">linker</a>
+                href="https://metacpan.org/module/KiokuDB::Linker">linker</a>
             manages the task of expanding <a
-                href="http://search.cpan.org/perldoc?KiokuDB::Entry">entries</a>
+                href="https://metacpan.org/module/KiokuDB::Entry">entries</a>
             into objects and connecting them into the in memory graph of
             objects.</p>
 
@@ -71,18 +71,18 @@
             <p>Inter object links are handled by recursively fetching the
             necessary entries from the <a href="#backends">backend</a>, except
             when <a
-                href="http://search.cpan.org/perldoc?KiokuDB::Meta::Attribute::Lazy">explicitly
+                href="https://metacpan.org/module/KiokuDB::Meta::Attribute::Lazy">explicitly
                 deferred.</a>.</p>
 
             <h3><a name="collapser" href="#top">&uarr;</a>The Collapser</h3>
 
             <p>The <a
-                href="http://search.cpan.org/perldoc?KiokuDB::Collapser">collapser</a>
+                href="https://metacpan.org/module/KiokuDB::Collapser">collapser</a>
             is the storage-time counterpart of the <a
                 href="#linker">linker</a>. It walks the objects in memory and
             <a href="#typemap">locates</a> the appropriate collapsing routine
             for each class as it prepares a set of <a
-                href="http://search.cpan.org/perldoc?KiokuDB::Entry">entries</a>
+                href="https://metacpan.org/module/KiokuDB::Entry">entries</a>
             to storage.</p>
 
             <p>The collapser handles memory cycles, weak references, handling
@@ -92,14 +92,14 @@
             <h3><a name="typemap" href="#top">&uarr;</a>The Type Map</h3>
 
             <p>The <a
-                href="http://search.cpan.org/perldoc?KiokuDB::TypeMap">type
+                href="https://metacpan.org/module/KiokuDB::TypeMap">type
                 map</a> is responsible for finding appropriate callbacks for
             each class stored in the database. These callbacks assign IDs,
             break down the object for the <a href="#collapser">collapser</a>,
             and reassemble it during <a href="#linker">loading</a>.</p>
 
             <p>The <a
-                href="http://search.cpan.org/perldoc?KiokuDB::TypeMap::Default">default
+                href="https://metacpan.org/module/KiokuDB::TypeMap::Default">default
                 typemap</a> will handle all <a
                 href="http://moose.perl.org">Moose</a> based objects, with rich
             support for metaclass based customization. This allows you to lazy
@@ -108,18 +108,18 @@
 
             <p>The default typemaps also contains entries for popular modules
             such as <a
-                href="http://search.cpan.org/perldoc?DateTime">DateTime</a>.</p>
+                href="https://metacpan.org/module/DateTime">DateTime</a>.</p>
 
             <p>Optional out of the box support for other popular class builders
             is also provided.</p>
 
             <p>Lastly, adding your own entries is trivial. You can <a
-                href="http://search.cpan.org/perldoc?KiokuDB::TypeMap::Entry::StorableHook">reuse
+                href="https://metacpan.org/module/KiokuDB::TypeMap::Entry::StorableHook">reuse
                 existing Storable hooks</a>, use <a
-                href="http://search.cpan.org/perldoc?KiokuDB::TypeMap::Entry::Callback">callbacks</a>,
+                href="https://metacpan.org/module/KiokuDB::TypeMap::Entry::Callback">callbacks</a>,
             or simply let the
             collapser <a
-                href="http://search.cpan.org/perldoc?KiokuDB::TypeMap::Entry::Naive">break
+                href="https://metacpan.org/module/KiokuDB::TypeMap::Entry::Naive">break
                 down the object for you</a>.</p>
 
             <h3><a name="live_objects" href="#top">&uarr;</a>Live Objects</h3>
@@ -131,7 +131,7 @@
             the object graph.</a></p>
 
             <p>The <a
-                href="http://search.cpan.org/perldoc?KiokuDB::LiveObjects">live
+                href="https://metacpan.org/module/KiokuDB::LiveObjects">live
                 object manager</a> additionally handles the various scoping
             related tasks, such as keeping alive objects only pointed to by
             weak references, and handling entry state during transactions.</p>
@@ -140,7 +140,7 @@
 
             <p>Indexing is done before insertion to the database by extracting
             the relevant search keys in Perl space. Although <a
-                href="http://search.cpan.org/perldoc?Search::GIN">Search::GIN</a>
+                href="https://metacpan.org/module/Search::GIN">Search::GIN</a>
             is still in its infancy, it is capable of performing simple
             searches on your database on arbitrary search keys.</a>
 
@@ -168,15 +168,15 @@
 
             <p>Secondly, there are numerous
             concrete roles to help backend authors reuse code, and a <a
-                href="http://search.cpan.org/perldoc?KiokuDB::Test">reusable
+                href="https://metacpan.org/module/KiokuDB::Test">reusable
                 test suite</a> to check your code.</p>
 
             <h3><a name="bdb" href="#top">&uarr;</a>Berkeley DB</h3>
 
             <p>The <a
-                href="http://search.cpan.org/perldoc?KiokuDB::Backend::BDB">Berkeley
+                href="https://metacpan.org/module/KiokuDB::Backend::BDB">Berkeley
                 DB backend</a> uses the <a
-                href="http://search.cpan.org/perldoc?DBI">BerkeleyDB</a> module
+                href="https://metacpan.org/module/BerkeleyDB">BerkeleyDB</a> module
             to interface with <a
                 href="http://www.oracle.com/technology/products/berkeley-db/index.html">Oracle
                 Berkeley DB</a>. This is a high performance, full features
@@ -186,9 +186,9 @@
             <h3><a name="dbi"href="#top">&uarr;</a>DBI</h3>
 
             <p>The <a
-                href="http://search.cpan.org/perldoc?KiokuDB::Backend::DBI">DBI
+                href="https://metacpan.org/module/KiokuDB::Backend::DBI">DBI
                 backend</a> utilizies Perl's <a
-                href="http://search.cpan.org/perldoc?DBI">DBI</a> module to
+                href="https://metacpan.org/module/DBI">DBI</a> module to
             provide database independent transactional storage using simple,
             portable SQL.</p>
 
@@ -203,9 +203,9 @@
             <h3><a name="files" href="#top">&uarr;</a>File Backend</h3>
 
             <p>The <a
-                href="http://search.cpan.org/perldoc?KiokuDB::Backend::Files">files
+                href="https://metacpan.org/module/KiokuDB::Backend::Files">files
                 backend</a> is the simplest storage provider. It uses <a
-                href="http://search.cpan.org/perldoc?Directory::Transactional">Directory::Transactional</a>
+                href="https://metacpan.org/module/Directory::Transactional">Directory::Transactional</a>
             to provide transaction support to store each object in its own file
             on disk.</p>
 
@@ -215,9 +215,9 @@
 
             <p><a href="http://couchdb.apache.org">Apache CouchDB</a> can be
             used as a backend using the <a
-                href="http://search.cpan.org/perldoc?KiokuDB::Backend::CouchDB">CouchDB
+                href="https://metacpan.org/module/KiokuDB::Backend::CouchDB">CouchDB
                 backend</a>. This utilizes <a
-                href="http://search.cpan.org/perldoc?AnyEvent::CouchDB">AnyEvent::CouchDB</a>
+                href="https://metacpan.org/module/AnyEvent::CouchDB">AnyEvent::CouchDB</a>
             to communicate with CouchDB.</p>
 
             <h3><a name="simpledb" href="#top">&uarr;</a>Simple DB</h3>
@@ -227,7 +227,7 @@
             backend is still in development, and provides access to <a
                 href="http://aws.amazon.com/simpledb/">Amazon SimpleDB</a>
             using the <a
-                href="http://search.cpan.org/perldoc?Amazon::SimpleDB">Amazon::SimpleDB</a>
+                href="https://metacpan.org/module/Amazon::SimpleDB">Amazon::SimpleDB</a>
             module.</p>
         </div>
         <div id="footer">
