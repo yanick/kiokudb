@@ -201,7 +201,7 @@ sub verify {
             is_deeply(
                 [ $self->all_objects->all ],
                 [ ],
-                "no enrtries (db cleared)",
+                "no entries (db cleared)",
             );
 
             $self->insert_ok( KiokuDB::Test::Person->new( name => "very new" ) );
@@ -218,14 +218,14 @@ sub verify {
                 is_deeply(
                     [ $self->all_objects->all ],
                     [ ],
-                    "no enrtries (db cleared)",
+                    "no entries (db cleared)",
                 );
             });
 
             is_deeply(
                 [ $self->all_objects->all ],
                 [ ],
-                "no enrtries (db cleared)",
+                "no entries (db cleared)",
             );
 
             die "rollback";
@@ -258,7 +258,7 @@ sub verify {
         is_deeply(
             [ $self->all_objects->all ],
             [ ],
-            "no enrtries (db cleared)",
+            "no entries (db cleared)",
         );
     });
 }
