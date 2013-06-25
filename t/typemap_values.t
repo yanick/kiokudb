@@ -138,11 +138,8 @@ foreach my $format ( qw(memory storable json), eval { require YAML::XS; "yaml" }
         is( ref($foo->scalar_ref), "SCALAR", "scalar ref" );
         is_deeply( $foo->scalar_ref, \"foo", "value" );
 
-        {
-            local $TODO = $format eq 'yaml' && "YAML incorrectly thinks scalar refs with weaken backref magic are objects";
-            is( ref($foo->scalar_ref_ref), "REF", "scalar ref (REF reftype)" );
-            is_deeply( $foo->scalar_ref_ref, \\"foo", "value" );
-        }
+        is( ref($foo->scalar_ref_ref), "REF", "scalar ref (REF reftype)" );
+        is_deeply( $foo->scalar_ref_ref, \\"foo", "value" );
 
         if ( HAVE_DATETIME ) {
             isa_ok( $foo->date, "DateTime" );
