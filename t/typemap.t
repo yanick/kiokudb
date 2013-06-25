@@ -221,7 +221,11 @@ use ok 'KiokuDB::TypeMap::Entry::Naive';
 
         isa_ok( $t, "KiokuDB::TypeMap" );
 
-        is_deeply( $t->all_isa_entry_classes, [qw(KiokuDB_Test_Foo KiokuDB_Test_CA)], "isa entry classes" );
+        is_deeply(
+            [ sort @{ $t->all_isa_entry_classes } ],
+            [ qw(KiokuDB_Test_CA KiokuDB_Test_Foo) ],
+            "isa entry classes"
+        );
 
         is( $t->resolve("KiokuDB_Test_CA"), $ca, "resolve KiokuDB_Test_CA entry $desc" );
         is( $t->resolve("KiokuDB_Test_Foo"), $foo, "resolve KiokuDB_Test_Foo entry $desc" );
