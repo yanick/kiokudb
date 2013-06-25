@@ -47,7 +47,6 @@ WriteMakefile(
     NAME         => 'KiokuDB',
     VERSION_FROM => 'lib/KiokuDB.pm',
     INSTALLDIRS  => 'site',
-    SIGN         => 1,
     PL_FILES     => { },
     EXE_FILES    => [ grep { /\w$/ } glob("bin/*") ],
     PREREQ_PM    => {
