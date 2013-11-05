@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::Backend::Role::Query::GIN;
 use Moose::Role;
 

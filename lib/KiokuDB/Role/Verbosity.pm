@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::Role::Verbosity;
 use Moose::Role;
 
@@ -41,3 +39,5 @@ KiokuDB::Role::Verbosity - A role for printing diagnosis to STDERR
 
 This role provides the C<verbose> attribute and a C<v> method that you can use
 to emit verbose output to C<STDERR>.
+
+=cut

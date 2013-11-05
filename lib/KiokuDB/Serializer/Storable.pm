@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::Serializer::Storable;
 use Moose;
 

@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::TypeMap::Default::Storable;
 use Moose;
 

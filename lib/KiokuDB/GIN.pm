@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::GIN;
 use Moose::Role;
 
@@ -57,5 +55,3 @@ This is a generic backend wrapping role that allows adding L<Search::GIN>
 queries to any backend.
 
 =cut
-
-

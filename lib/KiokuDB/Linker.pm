@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::Linker;
 use Moose;
 
@@ -425,4 +423,3 @@ object, until it is destroyed itself. This ensures that weak references are not
 destroyed prematurely, but allows their use in order to avoid memory leaks.
 
 =cut
-

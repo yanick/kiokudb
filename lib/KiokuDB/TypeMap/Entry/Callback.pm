@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::TypeMap::Entry::Callback;
 use Moose;
 
@@ -197,3 +195,5 @@ This is useful for value like objects, for whom the reference address makes no
 difference (such as L<URI> objects).
 
 =back
+
+=cut

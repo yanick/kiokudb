@@ -103,7 +103,7 @@ sub unknown_ok (&@) {
             },
         ),
     );
- 
+
     unknown_ok { $v->collapse( objects => [ $foo ], only_known => 1 ) } $foo;
 
     {

@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::Backend::Role::BinarySafe;
 use Moose::Role;
 
@@ -35,3 +33,4 @@ This mostly has to do with L<KiokuDB::Backend::Serialize> variants (for example
 L<KiokuDB::Backend::Serialize::Storable> is binary safe, while
 L<KiokuDB::Backend::Serialize::JSON> is not).
 
+=cut

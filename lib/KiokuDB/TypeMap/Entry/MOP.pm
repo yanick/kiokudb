@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::TypeMap::Entry::MOP;
 use Moose;
 
@@ -638,3 +636,5 @@ Defaults to false but might default to true in future versions (unless the
 database is in readonly mode).
 
 =back
+
+=cut

@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::TypeMap::Resolver;
 use Moose;
 

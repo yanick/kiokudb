@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::Meta::Attribute::DoNotSerialize;
 use Moose::Role;
 
@@ -42,5 +40,3 @@ L<KiokuDB> also recognizes L<MooseX::Meta::Attribute::Trait::DoNotSerialize>,
 but if you don't want to install L<MooseX::Storage> you can use this instead.
 
 =cut
-
-

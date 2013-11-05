@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 use utf8;
 
 package KiokuDB::Test::Fixture::Unicode;

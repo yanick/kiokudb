@@ -50,7 +50,7 @@ sub compile_collapse_body {
             my $file;
 
             if ( my $meta = Class::MOP::get_metaclass_by_name($pkg) ) {
-                if ( my $method = $meta->get_method($name) ) { 
+                if ( my $method = $meta->get_method($name) ) {
                     if ( refaddr($method->body) == refaddr($sub)
                             and
                         $method->isa("Class::MOP::Method::Generated")

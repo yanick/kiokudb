@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::Role::ID;
 use Moose::Role;
 
@@ -58,4 +56,3 @@ Should return a string to be used as the ID of the object.
 =back
 
 =cut
-

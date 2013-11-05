@@ -638,7 +638,7 @@ This demonstrates why:
 
     sub get_homer {
         my $homer = Person->new( name => "Homer Simpson" );
-        my $marge = Person->new( name => "Marge Simpson" ); 
+        my $marge = Person->new( name => "Marge Simpson" );
 
         $homer->spouse($marge);
         $marge->spouse($homer);

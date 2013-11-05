@@ -48,7 +48,7 @@ sub compile_collapse_wrapper {
 
     return sub {
         my ( $collapser, $obj, @args ) = @_;
-        
+
         $collapser->$method( $body, $obj, @extra, @args );
     }
 }

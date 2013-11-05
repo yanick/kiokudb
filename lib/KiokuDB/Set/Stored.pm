@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::Set::Stored;
 use Moose;
 
@@ -31,3 +29,4 @@ This object is the persisted representation of all L<KiokuDB::Set> objects.
 
 It is used internally after collapsing and before expanding, for simplicity.
 
+=cut

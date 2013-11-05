@@ -1,11 +1,4 @@
-#!/usr/bin/perl
-
 package KiokuDB::Class;
-
-use strict;
-use warnings;
-
-use Moose ();
 use Moose::Exporter;
 use Moose::Util::MetaRole;
 
@@ -63,4 +56,3 @@ L<Moose::Meta::Instance> with a custom role to support it), but in the future
 indexing, identity, and various optimizations will be supported by this.
 
 =cut
-

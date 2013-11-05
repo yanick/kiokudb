@@ -1,7 +1,4 @@
-#!/usr/bin/perl
-
 package KiokuDB::Util;
-
 use strict;
 use warnings;
 
@@ -271,5 +268,3 @@ You can use a hash to specify custom IDs:
 =back
 
 =cut
-
-

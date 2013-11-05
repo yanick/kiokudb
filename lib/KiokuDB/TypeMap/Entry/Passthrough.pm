@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::TypeMap::Entry::Passthrough;
 use Moose;
 
@@ -110,3 +108,5 @@ If false, the object will get its own ID and entry, and the object will be in
 the C<data> field of that entry.
 
 =back
+
+=cut

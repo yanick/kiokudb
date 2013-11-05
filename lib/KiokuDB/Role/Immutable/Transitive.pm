@@ -35,6 +35,3 @@ These objects can be freely cached as live instances, since none of the data
 they keep live is ever updated.
 
 =cut
-
-
-

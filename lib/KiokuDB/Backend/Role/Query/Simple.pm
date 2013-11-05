@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::Backend::Role::Query::Simple;
 use Moose::Role;
 
@@ -64,5 +62,3 @@ will search for objects whose C<name> attribute contains the string C<Mia>.
 More complex operations will be defined in the future.
 
 =cut
-
-

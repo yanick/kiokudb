@@ -41,3 +41,5 @@ approach).
 
 See L<KiokuDB::Role::Upgrade::Handlers::Table> for a more DWIM approach, and
 L<KiokuDB::TypeMap::Entry::MOP> for more details.
+
+=cut

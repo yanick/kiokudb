@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::Set::Transient;
 use Moose;
 
@@ -56,4 +54,3 @@ These sets can be constructed by the user for insertion into storage.
 See L<KiokuDB::Set> for more details.
 
 =cut
-

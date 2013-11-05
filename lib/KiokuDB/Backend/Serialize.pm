@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::Backend::Serialize;
 use Moose::Role;
 
@@ -87,3 +85,5 @@ Takes whatever C<serializate> returned and should inflate and return a
 L<KiokuDB::Entry>.
 
 =back
+
+=cut

@@ -130,3 +130,5 @@ The C<directory> method should be used to fetch the actual L<KiokuDB> delegate.
 This will work no matter how deeply it is nested.
 
 =back
+
+=cut

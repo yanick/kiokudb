@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::Backend::Role::Prefetch;
 use Moose::Role;
 

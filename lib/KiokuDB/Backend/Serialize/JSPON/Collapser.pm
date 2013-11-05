@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::Backend::Serialize::JSPON::Collapser;
 use Moose;
 
@@ -119,4 +117,3 @@ suitable for serialization as a JSON string.
 =back
 
 =cut
-

@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::Backend::Role::Clear;
 use Moose::Role;
 
@@ -48,3 +46,5 @@ This is optionally used by the dump loader script, and parts of the test suite.
 This method should clear all entries in the backend.
 
 =back
+
+=cut

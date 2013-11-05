@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::Backend::Role::TXN::Nested;
 use Moose::Role;
 
@@ -20,3 +18,5 @@ supporting rollback of nested transactions.
 
 This role is used during testing to run fixtures testing that a rollback of a
 nested transaction doesn't affect its parent transaction.
+
+=cut

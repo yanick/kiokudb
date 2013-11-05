@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::Backend::Role::TXN;
 use Moose::Role;
 
@@ -11,15 +9,15 @@ use namespace::clean -except => 'meta';
 requires qw(txn_begin txn_commit txn_rollback);
 
 sub txn_do {
-	my ( $self, $coderef, %args ) = @_;
+    my ( $self, $coderef, %args ) = @_;
 
-	my @args = @{ $args{args} || [] };
+    my @args = @{ $args{args} || [] };
 
-	my ( $commit, $rollback ) = @args{qw(commit rollback)};
+    my ( $commit, $rollback ) = @args{qw(commit rollback)};
 
-	ref $coderef eq 'CODE' or croak '$coderef must be a CODE reference';
+    ref $coderef eq 'CODE' or croak '$coderef must be a CODE reference';
 
-	my @txn_args = $self->txn_begin;
+    my @txn_args = $self->txn_begin;
 
     try {
         my @ret;
@@ -39,15 +37,15 @@ sub txn_do {
     } catch {
         my $err = $_;
 
-		try {
-			$self->txn_rollback(@txn_args);
+        try {
+            $self->txn_rollback(@txn_args);
             $rollback->() if $rollback;
         } catch {
-			croak "Transaction aborted: $err, rollback failed: $_";
-		};
+            croak "Transaction aborted: $err, rollback failed: $_";
+        };
 
-		die $err;
-	}
+        die $err;
+    }
 }
 
 __PACKAGE__

@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::Serializer;
 use Moose::Role;
 
@@ -57,3 +55,5 @@ L<KiokuDB::Backend::Serialize::Storable>) but can be used independently.
 
 This is used by L<KiokuDB::Backend::Serialize::Delegate> and
 L<KiokuDB::Cmd::DumpFormatter>.
+
+=cut

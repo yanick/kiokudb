@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::TypeMap::ClassBuilders;
 use Moose;
 
@@ -58,7 +56,7 @@ KiokuDB::TypeMap::ClassBuilders - A typemap for standard class builders
 
 =head1 SYNOPSIS
 
-	use KiokuDB::TypeMap::ClassBuilders;
+    use KiokuDB::TypeMap::ClassBuilders;
 
     my $t = KiokuDB::TypeMap::ClassBuilders->new(
         exclude => [qw(object_tiny)],
@@ -84,5 +82,3 @@ maps excluded or overridden.
 =back
 
 =cut
-
-

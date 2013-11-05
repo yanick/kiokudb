@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::Backend::Role::UnicodeSafe;
 use Moose::Role;
 
@@ -37,3 +35,4 @@ retreived as B<byte> strings upon deserialization.
 
 This mostly has to do with L<KiokuDB::Backend::Serialize> variants.
 
+=cut

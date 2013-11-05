@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::Test::Fixture::Scan;
 use Moose;
 
@@ -107,4 +105,3 @@ __PACKAGE__->meta->make_immutable;
 __PACKAGE__
 
 __END__
-

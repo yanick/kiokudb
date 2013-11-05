@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::Test::Fixture::MassInsert;
 use Moose;
 
@@ -53,4 +51,3 @@ sub verify {
 __PACKAGE__
 
 __END__
-

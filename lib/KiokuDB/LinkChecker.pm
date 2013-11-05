@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::LinkChecker;
 use Moose;
 
@@ -73,5 +71,3 @@ KiokuDB::LinkChecker - Reference consistency checker
 This is the low level link checker used by L<KiokuDB::Cmd::Command::FSCK>.
 
 =cut
-
-

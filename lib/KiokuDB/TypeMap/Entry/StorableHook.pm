@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::TypeMap::Entry::StorableHook;
 use Moose;
 
@@ -177,7 +175,7 @@ sub _type ($) {
             return 'A';
         }
     } else {
-		croak sprintf "Unexpected object type (%s)", reftype($obj);
+        croak sprintf "Unexpected object type (%s)", reftype($obj);
     }
 }
 
@@ -197,7 +195,7 @@ sub _new ($;$) {
         tie @$ref, "To::Object", $tied if ref $tied;
         return $ref;
     } else {
-		croak sprintf "Unexpected object type (%d)", $type;
+        croak sprintf "Unexpected object type (%d)", $type;
     }
 }
 
@@ -213,7 +211,7 @@ sub _clear ($) {
     } elsif ( $type eq 'ARRAY' ) {
         @$obj = ();
     } else {
-		croak sprintf "Unexpected object type (%s)", reftype($obj);
+        croak sprintf "Unexpected object type (%s)", reftype($obj);
     }
 }
 
@@ -233,10 +231,8 @@ L<KiokuDB> storage.
 
 =head1 SYNOPSIS
 
-	use KiokuDB::TypeMap::Entry::StorableHook;
+    use KiokuDB::TypeMap::Entry::StorableHook;
 
 =head1 DESCRIPTION
 
 =cut
-
-

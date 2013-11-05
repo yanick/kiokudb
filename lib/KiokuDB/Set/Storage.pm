@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::Set::Storage;
 use Moose::Role;
 

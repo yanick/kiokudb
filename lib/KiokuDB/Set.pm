@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::Set;
 use Moose::Role 'requires', 'has' => { -as => "attr" }; # need a 'has' method
 
@@ -195,4 +193,3 @@ This is the result of vivifying the members of a deferred set, and is similar
 to transient sets in implementation.
 
 =cut
-

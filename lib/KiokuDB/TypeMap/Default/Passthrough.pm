@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::TypeMap::Default::Passthrough;
 use Moose::Role;
 
@@ -94,3 +92,5 @@ instance suitable for L<Storable>.
 
 This typemap lets most of the default data types be passed through untouched,
 so that their own L<Storable> hooks may be invoked.
+
+=cut

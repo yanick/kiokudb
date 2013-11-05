@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::LiveObjects::Scope;
 use Moose;
 
@@ -111,5 +109,3 @@ Effectively kills the scope by clearing it and removing it from the live object 
 =back
 
 =cut
-
-

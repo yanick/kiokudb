@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::TypeMap;
 use Moose;
 
@@ -254,3 +252,5 @@ An array reference of all the classes in C<all_isa_entries>, sorted from least
 derived to most derived.
 
 =back
+
+=cut

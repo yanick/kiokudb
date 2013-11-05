@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::Backend;
 use Moose::Role;
 
@@ -267,5 +265,3 @@ as that is not mutated by L<KiokuDB::Linker>, but not the L<KiokuDB::Entry>
 instances themselves.
 
 =cut
-
-

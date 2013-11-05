@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::Backend::Role::Query;
 use Moose::Role;
 
@@ -44,5 +42,3 @@ through from L<KiokuDB/search> as is, and return a L<Data::Stream::Bulk> of
 matching entries.
 
 =cut
-
-

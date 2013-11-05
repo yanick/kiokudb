@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::Backend::Serialize::JSON;
 use Moose::Role;
 
@@ -138,5 +136,3 @@ construction.
 =back
 
 =cut
-
-

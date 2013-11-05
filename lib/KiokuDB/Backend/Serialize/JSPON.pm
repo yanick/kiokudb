@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::Backend::Serialize::JSPON;
 use Moose::Role;
 
@@ -75,5 +73,3 @@ See L<KiokuDB::Backend::Serialize::JSPON::Collapser/collapse_jspon>
 =back
 
 =cut
-
-

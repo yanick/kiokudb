@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::Backend::TypeMap::Default::Storable;
 use Moose::Role;
 

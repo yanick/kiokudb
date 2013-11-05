@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::TypeMap::Default;
 use Moose::Role;
 
@@ -140,3 +138,5 @@ L<Path::Class::Entity>
 L<Authen::Passphrase>
 
 =back
+
+=cut

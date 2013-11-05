@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::Role::UUIDs;
 use Moose::Role;
 

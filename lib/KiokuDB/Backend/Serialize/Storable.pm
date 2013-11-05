@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::Backend::Serialize::Storable;
 use Moose::Role;
 
@@ -86,3 +84,5 @@ Uses L<Storable/nstore_fd>.
 Uses L<Storable/fd_retrieve>.
 
 =back
+
+=cut

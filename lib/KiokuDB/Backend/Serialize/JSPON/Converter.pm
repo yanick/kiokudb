@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::Backend::Serialize::JSPON::Converter;
 use Moose::Role;
 

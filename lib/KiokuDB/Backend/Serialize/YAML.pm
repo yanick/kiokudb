@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::Backend::Serialize::YAML;
 use Moose::Role;
 
@@ -114,3 +112,5 @@ Reads until a YAML document boundry is reached, and then deserializes the
 current buffer.
 
 =back
+
+=cut

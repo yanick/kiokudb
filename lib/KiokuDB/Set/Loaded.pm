@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::Set::Loaded;
 use Moose;
 
@@ -55,5 +53,3 @@ This is the implementation of a loaded set. A L<KiokuDB::Set::Deferred>
 automatically upgrades into a loaded set when its set members are retrieved.
 
 =cut
-
-

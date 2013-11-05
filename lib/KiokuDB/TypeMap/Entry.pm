@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::TypeMap::Entry;
 use Moose::Role;
 
@@ -47,3 +45,5 @@ expanding the object.
 L<KiokuDB::TypeMap::Entry::Std> provides a more concise way of defining typemap entries.
 
 =back
+
+=cut

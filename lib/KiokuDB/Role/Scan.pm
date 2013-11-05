@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::Role::Scan;
 use MooseX::Role::Parameterized;
 
@@ -151,5 +149,3 @@ sets up an attribute with delegations.
 =back
 
 =cut
-
-

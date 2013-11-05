@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::GC::Naive;
 use Moose;
 
@@ -100,5 +98,3 @@ This class implements full mark and sweep garbage collection for a backend
 supporting L<KiokuDB::Backend::Role::Scan>.
 
 =cut
-
-

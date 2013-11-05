@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::Collapser;
 use Moose;
 
@@ -515,4 +513,3 @@ when a backend uses e.g. L<Storable> to serialize entries, and the object in
 question already has a C<STORABLE_freeze> and C<STORABLE_thaw> method.
 
 =cut
-

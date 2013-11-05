@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::LinkChecker::Results;
 use Moose;
 

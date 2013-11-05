@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::Role::Immutable;
 use Moose::Role;
 
@@ -43,5 +41,3 @@ will not work, you need to update the child directly:
     $kiokudb->update($immutable->child);
 
 =cut
-
-

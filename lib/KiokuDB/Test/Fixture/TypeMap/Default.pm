@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 use utf8;
 
 package KiokuDB::Test::Fixture::TypeMap::Default;
@@ -133,7 +131,7 @@ sub create {
             },
             op_two => do {
                 my $obj = Some::Class->new( name => "second" );
-                
+
                 $obj->load_plugin("+Some::Other::Role");
 
                 $obj->other_role_attr("after");
@@ -251,7 +249,7 @@ sub verify {
 
         isa_ok( $date, "DateTime" );
     }
-    
+
     if ( HAVE_DATETIME_FMT ) {
         $self->no_live_objects;
         my $s = $self->new_scope;
@@ -259,7 +257,7 @@ sub verify {
         my $date = $self->lookup_ok("datetime_fmt")->{obj};
 
         isa_ok( $date, "DateTime" );
-        
+
         SKIP: {
             skip "Not possible with JSON atm", 1 if (
                 ( $self->directory->backend->can("serializer")
@@ -267,12 +265,12 @@ sub verify {
                 or $self->directory->backend->does("KiokuDB::Backend::Serialize::JSON")
                 or $self->directory->backend->does("KiokuDB::Backend::Serialize::JSPON")
             );
-            
+
             isa_ok( $date->formatter, "DateTime::Format::Strptime" );
         }
-        
+
     }
-    
+
 
     if ( HAVE_URI ) {
         $self->no_live_objects;
@@ -317,7 +315,7 @@ sub verify {
         does_ok( $obj, "Some::Third::Role" );
 
         is( $obj->other_role_attr, "foo", "trait attr" );
-        
+
         is( $obj->name, "blah", "normal attr" );
     }
 

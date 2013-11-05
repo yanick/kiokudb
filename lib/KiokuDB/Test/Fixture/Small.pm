@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::Test::Fixture::Small;
 use Moose;
 

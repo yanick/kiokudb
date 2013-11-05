@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::Backend::Serialize::Delegate;
 use Moose::Role;
 
@@ -50,3 +48,4 @@ This role provides a C<serialzier> attribute (by default
 L<KiokuDB::Serializer::Storable>) with coercions from a moniker string for easy
 serialization format selection.
 
+=cut

@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::Role::TypeMap;
 use Moose::Role;
 
@@ -10,4 +8,3 @@ requires qw(resolve);
 __PACKAGE__
 
 __END__
-

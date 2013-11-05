@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::TypeMap::Composite;
 use Moose::Role;
 
@@ -148,7 +146,7 @@ many smaller typemaps
 
     extends qw(KiokuDB::TypeMap);
 
-	with qw(KiokuDB::TypeMap::Composite);
+    with qw(KiokuDB::TypeMap::Composite);
 
 
     # declare typemaps to inherit from using the KiokuDB::TypeMap trait
@@ -277,4 +275,3 @@ persist automatically:
 =back
 
 =cut
-

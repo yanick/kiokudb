@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::Backend::Role::Query::Simple::Linear;
 use Moose::Role;
 
@@ -52,3 +50,4 @@ L<KiokuDB::Backend::Role::Query::Simple>) using the api provided by
 L<KiokuDB::Backend::Role::Scan>. While very inefficient for large data sets, of
 your databases are small this can be useful.
 
+=cut

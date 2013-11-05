@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::Stream::Objects;
 use Moose;
 
@@ -12,10 +10,10 @@ has directory => (
 );
 
 has entry_stream => (
-	does => "Data::Stream::Bulk",
-	is   => "ro",
-	required => 1,
-	handles  => [qw(is_done loaded)],
+    does => "Data::Stream::Bulk",
+    is   => "ro",
+    required => 1,
+    handles  => [qw(is_done loaded)],
 );
 
 has linker => (
@@ -56,7 +54,7 @@ has _no_scope => (
 with qw(Data::Stream::Bulk) => { -excludes => 'loaded' };
 
 sub next {
-	my $self = shift;
+    my $self = shift;
 
     $self->_clear_scope;
 
@@ -100,5 +98,3 @@ This class is for object streams coming out of L<KiokuDB>.
 C<new_scope> is called once for each block, and then cleared.
 
 =cut
-
-

@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::Thunk;
 use Moose;
 
@@ -74,3 +72,4 @@ mark with L<KiokuDB::Meta::Attribute::Lazy> automatically, and should never be
 visible to the user because L<KiokuDB::Meta::Instance> will automatically
 inflate it before it's even seen by the accessor's code.
 
+=cut

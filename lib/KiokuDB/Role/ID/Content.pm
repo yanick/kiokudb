@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::Role::ID::Content;
 use Moose::Role;
 
@@ -55,5 +53,3 @@ Additionally, it is not an error to insert such objects twice since the objects
 are assumed to be identical.
 
 =cut
-
-

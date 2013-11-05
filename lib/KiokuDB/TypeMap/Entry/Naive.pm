@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::TypeMap::Entry::Naive;
 use Moose;
 
@@ -94,3 +92,5 @@ Perl SV level magic is not retained, apart from tied values.
 If true the object will be collapsed without an ID as part of its parent.
 
 =back
+
+=cut

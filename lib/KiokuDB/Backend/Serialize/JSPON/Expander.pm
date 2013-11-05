@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::Backend::Serialize::JSPON::Expander;
 use Moose;
 
@@ -192,3 +190,5 @@ L<KiokuDB::Backend::Serialize::JSPON::Expander>.
 Recursively inflates the hash reference, returning a L<KiokuDB::Entry> object.
 
 =back
+
+=cut

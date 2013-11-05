@@ -1,5 +1,4 @@
 package KiokuDB::LiveObjects::Guard;
-
 use strict;
 use warnings;
 

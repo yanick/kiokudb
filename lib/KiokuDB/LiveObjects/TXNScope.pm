@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::LiveObjects::TXNScope;
 use Moose;
 
@@ -105,5 +103,3 @@ Calls C<KiokuDB::LiveObjects/rollback_entries> with all the recorded entries.
 =back
 
 =cut
-
-

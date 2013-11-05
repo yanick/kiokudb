@@ -1,7 +1,4 @@
-#!/usr/bin/perl
-
 package KiokuDB::Test;
-
 use strict;
 use warnings;
 
@@ -85,3 +82,5 @@ Fixtures generally check for backend roles and skip unless the backend supports
 that set of features.
 
 =back
+
+=cut

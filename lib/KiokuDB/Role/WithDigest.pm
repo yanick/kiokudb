@@ -52,7 +52,7 @@ sub _extract_digest_input_strings {
     my ( $self, $part ) = @_;
 
     return $part unless ref $part;
-    
+
     no warnings 'uninitialized';
 
     if ( blessed($part) ) {

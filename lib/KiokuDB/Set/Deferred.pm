@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::Set::Deferred;
 use Moose;
 
@@ -191,4 +189,3 @@ Do not use this class directly, instead use L<KiokuDB::Set::Transient> or
 L<KiokuDB::Util/set> to create sets.
 
 =cut
-

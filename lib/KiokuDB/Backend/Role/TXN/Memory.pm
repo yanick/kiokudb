@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::Backend::Role::TXN::Memory;
 use Moose::Role;
 
@@ -267,4 +265,3 @@ deprecation warning.
 =back
 
 =cut
-

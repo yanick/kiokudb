@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::TypeMap::Default::Canonical;
 use Moose::Role;
 
@@ -95,3 +93,5 @@ implementation that canonicalizes the standard types to simplified versions.
 
 This typemap is suitable for serialization using L<JSON>. It stringifies or
 otherwise converts data structures into primitive representations.
+
+=cut

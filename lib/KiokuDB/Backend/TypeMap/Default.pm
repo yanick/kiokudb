@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::Backend::TypeMap::Default;
 use Moose::Role;
 
@@ -45,4 +43,3 @@ C<_build_default_typemap> that will return a L<KiokuDB::TypeMap> instance.
 See L<KiokuDB::TypeMap::Default> for details.
 
 =cut
-

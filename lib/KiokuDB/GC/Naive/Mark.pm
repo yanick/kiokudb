@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::GC::Naive::Mark;
 use Moose;
 

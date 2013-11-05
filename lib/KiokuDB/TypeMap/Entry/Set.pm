@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::TypeMap::Entry::Set;
 use Moose;
 
@@ -146,3 +144,5 @@ various flavours.
 
 You shouldn't need to use it directly, as the default typemap will contain an
 entry for it.
+
+=cut

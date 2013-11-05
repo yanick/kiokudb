@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::TypeMap::Entry::Alias;
 use Moose;
 
@@ -38,3 +36,5 @@ KiokuDB::TypeMap::Entry::Alias - An alias in the typemap to another entry
 
 This pseudo-entry directs the typemap resolution to re-resolve with the key in
 the C<to> field.
+
+=cut

@@ -50,3 +50,5 @@ definition, instead of as arguments to the L<KiokuDB> handle constructor.
 
 See L<KiokuDB::TypeMap::Entry::MOP> more details and
 L<KiokuDB::Role::Upgrade::Data> for a lower level alternative.
+
+=cut

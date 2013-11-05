@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::Meta::Attribute::Lazy;
 use Moose::Role;
 
@@ -66,5 +64,3 @@ will know to replace the placeholder with the actual loaded object when it is
 fetched from the object by an accessor.
 
 =cut
-
-

@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::Backend::Role::Scan;
 use Moose::Role;
 
@@ -94,5 +92,3 @@ Should return a L<Data::Stream::Bulk> of everything but the root entries.
 =back
 
 =cut
-
-

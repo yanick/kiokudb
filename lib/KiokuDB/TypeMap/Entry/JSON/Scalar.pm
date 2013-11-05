@@ -14,7 +14,7 @@ sub compile_collapse_body {
         my ( $collapser, %args ) = @_;
 
         my $scalar = $args{object};
-        
+
         my $data = $collapser->visit($$scalar);
 
         $collapser->make_entry(

@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::Backend::Role::Broken;
 use Moose::Role;
 
@@ -33,5 +31,3 @@ If your backend can't pass a test fixture you can ask to skip it using this role
 Simply return the fixture's name from the C<skip_fixtures> sub.
 
 =cut
-
-

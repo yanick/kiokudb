@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::Meta::Instance;
 use Moose::Role;
 
@@ -57,3 +55,4 @@ This allows your L<Moose::Meta::Attributes> to remain oblivious to the fact
 that the value is deferred, making sure that all the type constraints, lazy
 defaults, and various other L<Moose> features continue to work normally.
 
+=cut

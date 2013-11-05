@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::Test::Fixture;
 use Moose::Role;
 
@@ -274,7 +272,7 @@ sub no_live_objects {
     my @e;
 
     my $failed;
-    
+
     $failed++ unless is( scalar(@l), 0, "no live objects" );
 
     unless ( $self->directory->live_objects->txn_scope ) {

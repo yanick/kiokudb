@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::Test::Fixture::Overwrite;
 use Moose;
 
@@ -147,4 +145,3 @@ sub verify {
 __PACKAGE__
 
 __END__
-

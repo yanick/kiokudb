@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package KiokuDB::Serializer::JSON;
 use Moose;
 

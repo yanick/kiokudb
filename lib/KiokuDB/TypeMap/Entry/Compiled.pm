@@ -58,7 +58,7 @@ argument, and should return the expanded object.
 =item collapse_method
 
 Contains a subroutine reference (or a string, denoting a method name).  It is
-called as method on the L<KiokuDB::Collapser>.  Takes the object to 
+called as method on the L<KiokuDB::Collapser>.  Takes the object to
 be collapsed as an argument, and should return a L<KiokuDB::Reference>.
 
 =item id_method
