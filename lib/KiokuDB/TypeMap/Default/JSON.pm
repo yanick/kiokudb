@@ -35,6 +35,10 @@ sub _build_json_boolean_typemap {
                 type      => "KiokuDB::TypeMap::Entry::Passthrough",
                 intrinsic => 1,
             },
+            'JSON::PP::Boolean' => {
+                type      => "KiokuDB::TypeMap::Entry::Passthrough",
+                intrinsic => 1,
+            },
         },
     );
 }

@@ -21,7 +21,7 @@ my $tr = KiokuDB::TypeMap::Resolver->new(
 
 isa_ok( $tr, "KiokuDB::TypeMap::Resolver" );
 
-foreach my $class ( qw(DateTime DateTime::Duration Path::Class::Entity URI Tie::RefHash Authen::Passphrase JSON::Boolean SCALAR) ) {
+foreach my $class ( qw(DateTime DateTime::Duration Path::Class::Entity URI Tie::RefHash Authen::Passphrase JSON::Boolean JSON::PP::Boolean SCALAR) ) {
     my $e = $t->resolve($class);
 
     does_ok( $e, "KiokuDB::TypeMap::Entry", "entry for $class" );
@@ -66,7 +66,11 @@ SKIP: {
 
     my $entry = $buffer->id_to_entry($id);
 
-    isa_ok( $entry->data->{yes}, "JSON::Boolean", "boolean passed through" );
+    # see JSON.pm changelog
+    my $boolean_class = $JSON::VERSION < 2.90
+        ? "JSON::Boolean"
+        : "JSON::PP::Boolean";
+    isa_ok( $entry->data->{yes}, $boolean_class, "boolean passed through" );
 
 }
 
