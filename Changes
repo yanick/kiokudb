@@ -1,53 +1,55 @@
-0.54
+Revision history for KiokuDB
+
+0.54  2013-06-25
     - packaging issues
 
-0.53
+0.53  2013-06-25
     - Fix some test issues
 
-0.52
+0.52  2011-06-27
     - Fix an issue where streaming entries can sometimes cause them to
       disappear.
     - Fix overlap with the new 'union' keyword in Moose::Util::TypeConstraints.
 
-0.51
+0.51  2011-03-31
     - Die with an error when two objects try and register with the same ID but
       don't both do the KiokuDB::Role::ID::Content role.
 
-0.50
+0.50  2010-10-19
     - Use new instance api in Moose to allow native traits to inline properly
       when used with KiokuDB::Class (doy)
 
-0.49
+0.49  2010-09-09
     - Merge NUFFIN/0.48 and FLORA/0.48
 
-0.48 [FLORA]
+0.48 [FLORA] 2010-08-24
     - Avoid warnings from Moose 1.10
 
-0.48 [NUFFIN]
+0.48 [NUFFIN] 2010-07-31
     - Reupload with proper MANIFEST
 
-0.47
+0.47  2010-07-29
     - Avoid warnings from Moose 1.09 (Dave Rolsky)
     - Numerous documentation fixes (David Leadbeater)
     - Move the Japanese translation of the tutorial under POD2::JA to allow
       perldoc -L ja KiokuDB::Tutorial
     - Don't allow the live object cache to grow too big
 
-0.46
+0.46  2010-06-27
     - s/_03/ on the version
 
-0.46_03
+0.46_03  2010-06-27
     - Internals change cleanups regarding weakening $entry->{data} with
       passthrough objects
     - fiddle leak tracking code around to avoid keeping temporary refs around,
       which makes Devel::FindRef more useful in the user's leak tracker
 
-0.46_02
+0.46_02  2010-06-27
     - Support for caching of live objects (i.e. immutable ones)
     - Fix the =head1 NAME of Tutorial::JA
     - Move t/set.t into a standalone test fixture
 
-0.46_01
+0.46_01  2010-06-20
     - Lots of refactoring to LiveObjects
         - metadata is keyed by ID, not object
         - keep_entries attribute allows entries to be discarded once used
@@ -59,19 +61,19 @@
       very flakey when the installation is the result of an upgrade instead of
       a fresh install
 
-0.45
+0.45  2010-06-05
     - Introduce KiokuDB::Backend::Role::GC which allows backends to construct
       their own garbage collector for the GC command.
     - name mangle inline classes in tests to avoid false failure reports (e.g.
       when a Foo.pm is in @INC)
     - add scoped_txn, txn_begin, txn_commit, txn_rollback
 
-0.44
+0.44  2010-06-02
     - Remove accidental use of namespace::autoclean instead of namespace::clean
       (doy)
     - Proper fix for class_version this time =(
 
-0.43
+0.43  2010-05-26
     - Now throws proper error objects instead of unintelligiable hash refs
     - Fix JSON serialization (omitted keys necessary for version tracking and
       GIN indexing)
@@ -79,7 +81,7 @@
     - Suppress additional recursion and repeated weaken() warnings
     - Try harder to skip DateTime formatter serialization roundtripping on JSON based backends
 
-0.42
+0.42  2010-04-16
     - Update translation of tutorial (ktat)
     - use RegexpRef type constraint instead of Regexp (Regexp look blessed but
       not in C land) (doy)
@@ -88,24 +90,24 @@
     - Typemap support for the REF reftype (just an alias for SCALAR)
     - misc doc fixes
 
-0.41
+0.41  2010-03-21
     - Re-release without extra crap in the tarball.
 
-0.40
+0.40  2010-03-21
     - Allow using a JSON string as a DSN, e.g.
       '{"dsn":"dbi:SQLite:foo","schema":"MyApp::DB"}'
     - Added DateTime::Duration to the default typemap
 
-0.39
+0.39  2010-03-17
     - Allow a backend to provide a default typemap in addition to the serializer one
     - call 'register_handle' on duck-typing backends in KiokuDB::BUILD
     - plug a leak where the live object set kept an indirect reference to
       passthrough entries
 
-0.38
+0.38  2010-03-06
     - Fix a bug where object streams would end prematurely (Graham Barr)
 
-0.37
+0.37  2010-03-03
     - Resolve long standing issues with TXN::Memory
         - TXN::Memory::Scan role now implements proper enumeration
         - Fixture::TXN::Scan verifies transactional semantics of enumeration
@@ -114,7 +116,7 @@
     - Various doc fixes
     - Class versioning (disabled by default)
 
-0.36
+0.36  2010-02-20
     - Resolve a bug when deleting objects that are still live,
       lookup($dead_object_id) would still return the object even though it's
       not actually in storage.
@@ -122,18 +124,18 @@
     - various API methods now just return; when invoked with no arguments,
       instead of potentially erroring at the backend level
 
-0.35
+0.35  2010-02-05
     - bump dependency version for MooseX::YAML to prevent bad interaction with
       MooseX::Blessed::Reconstruct
     - add insert_nonroot and store_nonroot methods
 
-0.34
+0.34  2009-10-24
     - fix an incorrect conversion to Try::Tiny (Dylan)
     - remove ciruclar role definition that causes does_role to inf loop
     - laxen the exception matching regex for missing .pm files in @INC to
       address CPAN testers reports with a different formatting for that error
 
-0.33
+0.33  2009-09-23
     - Added Japanese tutorial KiokuDB::Tutorial::JA (ktat)
     - Correct indexing tutorial example (ask)
     - Use done_testing() instead of no_plan (dandv)
@@ -141,24 +143,24 @@
       caused infinite recursion)
     - add a refresh method (no deep_refresh yet)
 
-0.32
+0.32  2009-07-30
     - Don't assume all metaclasses have the does_role method
     - Various documentation fixes
     - Add no warnings 'recursion' to KiokuDB::Linker
 
-0.31
+0.31  2009-07-06
     - Remove MooseX::Getopt usage from verbosity role
     - Don't depend on KiokuDB::Cmd in makefile, just warn (avoids recursive
       dependency)
 
-0.30
+0.30  2009-07-05
     - Split KiokuDB::Cmd into a separate distribution
 
-0.29
+0.29  2009-06-27
     - work around Test::Exception leak relating to closures in 5.8
     - fix various new warnings with Moose
 
-0.28
+0.28  2009-06-26
     - YAML serializer no longer stores extra data
     - MooseX::Clone is available for entry/reference
     - TypeMap::Entry::Std role was split up to smaller roles
@@ -169,7 +171,7 @@
     - SCALAR refs can be stored in JSON by using a custom typemap
     - Support for serializing closures
 
-0.27
+0.27  2009-04-20
     - Add roles for digest based IDs
     - Change dep versions of IO and Tie::RefHash::Weak (they were wrong under
       5.8) (Thanks to Otto Hirr)
@@ -178,16 +180,16 @@
     - TODO list updated
     - correct dry_run option in WithDSN when transactions are unsupported
 
-0.26
+0.26  2009-04-08
     - avoid using deprecated Moose/Class::MOP features
     - bump deps on Moose and Class::MOP
 
-0.25
+0.25  2009-03-27
     - attempt to reduce memory usage by using a custom destruction guard
     - only run concurrency stress test if env var is set
     - various doc fixes
 
-0.24
+0.24  2009-02-28
     - various doc fixes (Dan Dascalescu)
     - fix semantics when a Set::Deferred outlives the scope in which it was
       created and then gets vivified
@@ -198,7 +200,7 @@
     - various doc fixes
     - add KiokuDB::Role::API
 
-0.23
+0.23  2009-01-25
     - Add KiokuDB::DoNotSerialize trait (MooseX::Storage trait is still respected)
     - add Collapser::Buffer, which replaces the various temp attrs. Changes
       from the buffer are only written to live objects after a successful write
@@ -206,17 +208,17 @@
       inserted when one is already live.
     - Various doc improvements
 
-0.22
+0.22  2009-01-17
     - Add TXN::Memory role to provide memory bufferred transactions to backends only
       supporting atomicity guarantees (e.g. CouchDB)
     - Documentation improvements
     - Allow skipping of test suite fixtures on broken backends
     - Various minor fixes and improvements
 
-0.21
+0.21  2009-01-14
     - Readded the dependency on JSON in addition to JSON::XS
 
-0.20
+0.20  2009-01-13
     - Refactored KiokuDB::TypeMap::Composite out of KiokuDB::TypeMap::Default
     - Added KiokuDB::TypeMap::Entry::StorableHook, which allows reusing of
       existing STORABLE_freeze hooks
@@ -237,17 +239,17 @@
     - Added 'allow_classes', 'allow_bases' and 'allow_class_builders' options
       to KiokuDB allowing for easy typemap creation.
 
-0.19
+0.19  2009-01-05
     - Introduce KiokuDB::Stream::Objects, a Data::Stream::Bulk for objects that
       automatically creates a new scope for each block. This makes it much
       harder to leak when iterating through C<all_objects>.
 
-0.18
+0.18  2009-01-04
     - Fix KiokUDB->connect("foo", @args) when the dsn string has no parameters
       (@args were being ignored)
     - Add a fixture to test that overwriting an entry is not allowed.
 
-0.17
+0.17  2008-12-30
     - More docs
     - remove KiokuDB::Backend::Null which was historically used for testing but
       is long since useless.
@@ -256,7 +258,7 @@
       txn_begin, txn_rollback and txn_commit
     - correct plan for t/uuid.t when a module is missing
 
-0.16
+0.16  2008-12-28
     - Lots of docs
     - Fix KiokuDB::Reference's Storable hook limitation using a simple
       workaround. Not a real fix yet.
@@ -264,15 +266,15 @@
     - In KiokuDB::Cmd::OutputHandle, don't clobber the file before the command
       has actually run (remove EarlyBuild attr)
 
-0.15
+0.15  2008-12-28
     - Last version was accidentally released off a problematic branch,
       rereleasing without that change
 
-0.14
+0.14  2008-12-28
     - skip incremental JSON parsing tests if JSON::XS is missing
     - load IO::Handle to attempt to work around some weird test failures
 
-0.13
+0.13  2008-12-25
     - t/serializer.t was causing bogus failures by not skipping if YAML::XS is
       unavailable
     - Cleanup of ( is => 'rw' ) bits in KiokuDB::Entry that should have really
@@ -280,10 +282,10 @@
     - Introduce partial handling of anonymous classes created due to runtime
       application of roles ( My::Role->meta->apply($instance) )
 
-0.12
+0.12  2008-12-24
     - Remove a use Devel::PartialDump that accidentally got committed
 
-0.11
+0.11  2008-12-24
     - Fetching now queues items so that the backend's get() method is called
       fewer times, with more IDs each time. This significantly increases the
       performance of high latency backends, such as DBI or CouchDB.
@@ -292,7 +294,7 @@
     - Make the various fields of the JSPON format customizable
     - Serialization is now pluggable using the Delegate serialization role
 
-0.10
+0.10  2008-12-22
     - Load classes in the typemap resolution code, so that objects whose
       classes aren't necessarily loaded at compile time can still be inflated.
     - add 'import_yaml' to KiokuDB::Util
@@ -303,33 +305,33 @@
     - Add a new role and test for nested transaction supporting backends
       (partial rollback)
 
-0.09
+0.09  2008-12-17
     - Remove KiokuDB::Resolver, moving ID assignment functionality into the
       collapser and the typemap
     - Fix bogus failures on 5.8 due to weird leaks (perl bug affecting test suite)
 
-0.08
+0.08  2008-12-05
     - Fix a breakage in inflating passthrough intrinsic objects created with
       older versions of KiokuDB
     - Refactor command line tools to use App::Cmd
     - Add KiokuDB::LinkChecker and a FSCK command
 
-0.07
+0.07  2008-10-31
     - Rename backend roles to KiokuDB::Backend::Role::Foo (omega)
     - Change entry packing format in Storable to something less idiotic
 
-0.06
+0.06  2008-10-31
     - Use epoch, not ISO 8601 dates in JSPON map by default to avoid issues
       with DateTime::Format::ISO8601 dependency in testing. Will support both in the future
     - Fix tied support for JSPON
 
-0.05
+0.05  2008-10-31
     - Add default typemaps for JSON and Storable serialization
 
-0.04
+0.04  2008-10-30
     - Fix ->clear in KiokuDB::GIN
 
-0.03
+0.03  2008-10-28
     - Lots of new docs
     - Smaller set of dependencies
         - Many deps are now optional (skips tests)
@@ -338,7 +340,7 @@
     - Fixed an random test failure in live_objects.t that accidentally depended
       on address space ordering
 
-0.02
+0.02  2008-10-25
     - Lazy meta trait for attributes
     - DoNotSerialize meta trait is now respected
     - Documentation updates
@@ -348,5 +350,5 @@
     - Dependency fixes
     - KiokuDB::Role::ID
 
-0.01
+0.01  2008-10-16
     - Initial Release
