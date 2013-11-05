@@ -8,12 +8,12 @@ use Test::Moose;
 
 use constant HAVE_YAML => eval { require YAML::XS } ? 1 : 0;
 
-use ok 'KiokuDB::Serializer';
-use ok 'KiokuDB::Serializer::JSON';
-use ok 'KiokuDB::Serializer::Storable';
-use if HAVE_YAML, ok => 'KiokuDB::Serializer::YAML';
+use KiokuDB::Serializer;
+use KiokuDB::Serializer::JSON;
+use KiokuDB::Serializer::Storable;
+use if HAVE_YAML, 'KiokuDB::Serializer::YAML';
 
-use ok 'KiokuDB::Entry';
+use KiokuDB::Entry;
 
 sub KiokuDB::Entry::BUILD { shift->root }; # force building of root for is_deeply
 $_->make_mutable, $_->make_immutable for KiokuDB::Entry->meta; # recreate new

@@ -5,10 +5,10 @@ use warnings;
 
 use Test::More;
 
-use ok 'KiokuDB::GC::Naive';
-use ok 'KiokuDB::Entry';
-use ok 'KiokuDB::Reference';
-use ok 'KiokuDB::Backend::Hash';
+use KiokuDB::GC::Naive;
+use KiokuDB::Entry;
+use KiokuDB::Reference;
+use KiokuDB::Backend::Hash;
 
 use Data::Stream::Bulk::Util qw(bulk);
 

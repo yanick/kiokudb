@@ -8,13 +8,13 @@ use Test::More;
 use Scalar::Util qw(refaddr reftype blessed);
 use Storable qw(dclone);
 
-use ok 'KiokuDB::TypeMap::Entry::Callback';
-use ok 'KiokuDB::TypeMap::Entry::Ref';
-use ok 'KiokuDB::TypeMap::Resolver';
-use ok 'KiokuDB::Collapser';
-use ok 'KiokuDB::Linker';
-use ok 'KiokuDB::LiveObjects';
-use ok 'KiokuDB::Backend::Hash';
+use KiokuDB::TypeMap::Entry::Callback;
+use KiokuDB::TypeMap::Entry::Ref;
+use KiokuDB::TypeMap::Resolver;
+use KiokuDB::Collapser;
+use KiokuDB::Linker;
+use KiokuDB::LiveObjects;
+use KiokuDB::Backend::Hash;
 
 use Tie::RefHash;
 

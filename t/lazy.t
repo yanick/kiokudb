@@ -7,8 +7,8 @@ use Test::More;
 use Test::Moose;
 use Test::Exception;
 
-use ok 'KiokuDB';
-use ok 'KiokuDB::Backend::Hash';
+use KiokuDB;
+use KiokuDB::Backend::Hash;
 
 {
     package KiokuDB_Test_Simple;

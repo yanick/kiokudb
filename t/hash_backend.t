@@ -5,8 +5,8 @@ use warnings;
 
 use Test::More;
 
-use ok 'KiokuDB::Backend::Hash';
-use ok 'KiokuDB::Entry';
+use KiokuDB::Backend::Hash;
+use KiokuDB::Entry;
 
 my @entries = ( map { KiokuDB::Entry->new($_) }
     { id => 1, root => 1, data => { name => "foo", age => 3 } },

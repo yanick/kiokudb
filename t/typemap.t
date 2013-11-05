@@ -7,9 +7,9 @@ use Test::More;
 use Test::Moose;
 use Test::Exception;
 
-use ok 'KiokuDB::TypeMap';
-use ok 'KiokuDB::TypeMap::Entry::Alias';
-use ok 'KiokuDB::TypeMap::Entry::Naive';
+use KiokuDB::TypeMap;
+use KiokuDB::TypeMap::Entry::Alias;
+use KiokuDB::TypeMap::Entry::Naive;
 
 {
     package KiokuDB_Test_Foo;

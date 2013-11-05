@@ -2,8 +2,8 @@
 
 use Test::More;
 
-use ok 'KiokuDB';
-use ok 'KiokuDB::Backend::Hash';
+use KiokuDB;
+use KiokuDB::Backend::Hash;
 
 use Cache::Ref::CLOCK;
 

@@ -7,9 +7,9 @@ use Test::More;
 
 use Storable qw(dclone);
 
-use ok 'KiokuDB::Entry';
-use ok 'KiokuDB::Reference';
-use ok 'KiokuDB::LiveObjects';
+use KiokuDB::Entry;
+use KiokuDB::Reference;
+use KiokuDB::LiveObjects;
 
 {
     package KiokuDB_Test_Foo;

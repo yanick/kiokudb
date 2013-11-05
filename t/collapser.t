@@ -10,15 +10,15 @@ use Try::Tiny;
 use Scalar::Util qw(weaken isweak);
 use Storable qw(dclone);
 
-use ok 'KiokuDB::Entry';
-use ok 'KiokuDB::Collapser';
-use ok 'KiokuDB::LiveObjects';
-use ok 'KiokuDB::TypeMap';
-use ok 'KiokuDB::TypeMap::Resolver';
-use ok 'KiokuDB::TypeMap::Entry::MOP';
-use ok 'KiokuDB::TypeMap::Entry::Callback';
-use ok 'KiokuDB::TypeMap::Entry::Ref';
-use ok 'KiokuDB::Backend::Hash';
+use KiokuDB::Entry;
+use KiokuDB::Collapser;
+use KiokuDB::LiveObjects;
+use KiokuDB::TypeMap;
+use KiokuDB::TypeMap::Resolver;
+use KiokuDB::TypeMap::Entry::MOP;
+use KiokuDB::TypeMap::Entry::Callback;
+use KiokuDB::TypeMap::Entry::Ref;
+use KiokuDB::Backend::Hash;
 
 sub KiokuDB::Entry::BUILD { shift->root }; # force building of root for is_deeply
 $_->make_mutable, $_->make_immutable for KiokuDB::Entry->meta; # recreate new

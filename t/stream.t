@@ -7,9 +7,9 @@ use Test::More;
 use Test::Exception;
 use Data::Stream::Bulk::Callback;
 
-use ok 'KiokuDB';
-use ok 'KiokuDB::Backend::Hash';
-use_ok 'KiokuDB::Stream::Objects';
+use KiokuDB;
+use KiokuDB::Backend::Hash;
+use KiokuDB::Stream::Objects;
 
 {
     package KiokuDB_Test_Foo;

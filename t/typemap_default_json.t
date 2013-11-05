@@ -9,9 +9,9 @@ use Test::Moose;
 
 use Scalar::Util qw(reftype);
 
-use ok 'KiokuDB::TypeMap';
-use ok 'KiokuDB::TypeMap::Default::JSON';
-use ok 'KiokuDB::TypeMap::Resolver';
+use KiokuDB::TypeMap;
+use KiokuDB::TypeMap::Default::JSON;
+use KiokuDB::TypeMap::Resolver;
 
 my $t = KiokuDB::TypeMap::Default::JSON->new;
 

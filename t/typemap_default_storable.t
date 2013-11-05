@@ -9,9 +9,9 @@ use Test::Moose;
 
 use Scalar::Util qw(reftype);
 
-use ok 'KiokuDB::TypeMap';
-use ok 'KiokuDB::TypeMap::Default::Storable';
-use ok 'KiokuDB::TypeMap::Resolver';
+use KiokuDB::TypeMap;
+use KiokuDB::TypeMap::Default::Storable;
+use KiokuDB::TypeMap::Resolver;
 
 my $t = KiokuDB::TypeMap::Default::Storable->new;
 

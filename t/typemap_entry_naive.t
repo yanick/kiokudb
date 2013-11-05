@@ -7,12 +7,12 @@ use Test::More;
 
 use Scalar::Util qw(refaddr reftype blessed);
 
-use ok 'KiokuDB::TypeMap::Entry::Naive';
-use ok 'KiokuDB::TypeMap::Resolver';
-use ok 'KiokuDB::Collapser';
-use ok 'KiokuDB::Linker';
-use ok 'KiokuDB::LiveObjects';
-use ok 'KiokuDB::Backend::Hash';
+use KiokuDB::TypeMap::Entry::Naive;
+use KiokuDB::TypeMap::Resolver;
+use KiokuDB::Collapser;
+use KiokuDB::Linker;
+use KiokuDB::LiveObjects;
+use KiokuDB::Backend::Hash;
 
 {
     package KiokuDB_Test_Foo;

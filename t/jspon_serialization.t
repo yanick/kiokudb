@@ -6,10 +6,10 @@ use warnings;
 use Test::More;
 use Test::Moose;
 
-use ok 'KiokuDB::Backend::Serialize::JSPON';
-use ok 'KiokuDB::Backend::Serialize::JSON';
-use ok 'KiokuDB::Entry';
-use ok 'KiokuDB::Reference';
+use KiokuDB::Backend::Serialize::JSPON;
+use KiokuDB::Backend::Serialize::JSON;
+use KiokuDB::Entry;
+use KiokuDB::Reference;
 
 {
     package KiokuDB_Test_Foo;

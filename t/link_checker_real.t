@@ -5,10 +5,10 @@ use warnings;
 
 use Test::More;
 
-use ok 'KiokuDB::LinkChecker';
-use ok 'KiokuDB::Backend::Hash';
-use ok 'KiokuDB::Test::Fixture::ObjectGraph';
-use ok 'KiokuDB';
+use KiokuDB::LinkChecker;
+use KiokuDB::Backend::Hash;
+use KiokuDB::Test::Fixture::ObjectGraph;
+use KiokuDB;
 
 my $dir = KiokuDB->new(
     backend => my $backend = KiokuDB::Backend::Hash->new(),

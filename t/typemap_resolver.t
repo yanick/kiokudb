@@ -8,9 +8,9 @@ use Test::Exception;
 
 use Scalar::Util qw(reftype);
 
-use ok 'KiokuDB::TypeMap';
-use ok 'KiokuDB::TypeMap::Entry::Naive';
-use ok 'KiokuDB::TypeMap::Resolver';
+use KiokuDB::TypeMap;
+use KiokuDB::TypeMap::Entry::Naive;
+use KiokuDB::TypeMap::Resolver;
 
 {
     package KiokuDB_Test_Foo;

@@ -7,7 +7,7 @@ use Test::More;
 
 use Storable qw(nfreeze thaw);
 
-use ok 'KiokuDB::Reference';
+use KiokuDB::Reference;
 
 foreach my $id (
     "foo",

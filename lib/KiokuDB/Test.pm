@@ -52,7 +52,7 @@ KiokuDB::Test - Reusable tests for L<KiokuDB> backend authors.
 
     use KiokuDB::Test;
 
-    use ok "KiokuDB::Backend::MySpecialBackend";
+    use KiokuDB::Backend::MySpecialBackend;
 
     my $b = KiokuDB::Backend::MySpecialBackend->new( ... );
 

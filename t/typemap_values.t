@@ -10,11 +10,11 @@ use constant HAVE_URI        => eval { require URI };
 use constant HAVE_DATETIME   => eval { require DateTime; require DateTime::Duration };
 use constant HAVE_PATH_CLASS => eval { require Path::Class };
 
-use ok "KiokuDB::TypeMap::Entry::Callback";
-use ok "KiokuDB::TypeMap::Entry::Passthrough";
-use ok "KiokuDB::TypeMap";
-use ok "KiokuDB::Backend::Hash";
-use ok "KiokuDB";
+use KiokuDB::TypeMap::Entry::Callback;
+use KiokuDB::TypeMap::Entry::Passthrough;
+use KiokuDB::TypeMap;
+use KiokuDB::Backend::Hash;
+use KiokuDB;
 
 {
     package KiokuDB_Test_Foo;

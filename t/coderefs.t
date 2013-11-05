@@ -6,7 +6,7 @@ use warnings;
 use Test::More;
 use Test::Exception;
 
-use ok 'KiokuDB';
+use KiokuDB;
 
 my $dir = KiokuDB->connect("hash");
 

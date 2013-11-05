@@ -8,14 +8,14 @@ use KiokuDB::Test;
 
 use Scalar::Util qw(refaddr);
 
-use ok 'KiokuDB::GIN';
-use ok 'KiokuDB';
+use KiokuDB::GIN;
+use KiokuDB;
 
-use ok 'KiokuDB::Backend::Hash';
-use ok 'KiokuDB::Test::Fixture::Small';
+use KiokuDB::Backend::Hash;
+use KiokuDB::Test::Fixture::Small;
 
-use ok 'Search::GIN::Query::Class';
-use ok 'Search::GIN::Extract::Class';
+use Search::GIN::Query::Class;
+use Search::GIN::Extract::Class;
 
 {
     package KiokuDB_Test_MyGIN;

@@ -7,12 +7,12 @@ use Test::More;
 
 use Scalar::Util qw(refaddr reftype blessed);
 
-use ok 'KiokuDB::TypeMap::Entry::StorableHook';
-use ok 'KiokuDB::TypeMap::Resolver';
-use ok 'KiokuDB::Collapser';
-use ok 'KiokuDB::Linker';
-use ok 'KiokuDB::LiveObjects';
-use ok 'KiokuDB::Backend::Hash';
+use KiokuDB::TypeMap::Entry::StorableHook;
+use KiokuDB::TypeMap::Resolver;
+use KiokuDB::Collapser;
+use KiokuDB::Linker;
+use KiokuDB::LiveObjects;
+use KiokuDB::Backend::Hash;
 
 BEGIN { eval 'use Test::Memory::Cycle; 1' or eval 'sub memory_cycle_ok {}' }
 

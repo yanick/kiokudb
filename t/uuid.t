@@ -8,7 +8,7 @@ use Test::More tests => 12;
 sub check_role ($) {
     my $role = shift;
 
-    use_ok $role;
+    eval "require $role" || die $@;
 
     can_ok( $role, 'generate_uuid' );
 

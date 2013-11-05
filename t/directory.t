@@ -13,8 +13,8 @@ use Scalar::Util qw(blessed weaken isweak refaddr);
 
 BEGIN { $KiokuDB::SERIAL_IDS = 1 }
 
-use ok 'KiokuDB';
-use ok 'KiokuDB::Backend::Hash';
+use KiokuDB;
+use KiokuDB::Backend::Hash;
 
 sub no_live_objects {
     local $Test::Builder::Level = $Test::Builder::Level + 1;

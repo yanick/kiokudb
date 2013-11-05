@@ -5,8 +5,8 @@ use warnings;
 
 use Test::More;
 
-use ok 'KiokuDB';
-use ok 'KiokuDB::Test::Fixture::ObjectGraph';
+use KiokuDB;
+use KiokuDB::Test::Fixture::ObjectGraph;
 
 use Set::Object qw(set);
 

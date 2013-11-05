@@ -9,8 +9,8 @@ use Scalar::Util qw(weaken);
 
 use Cache::Ref::CART;
 
-use ok 'KiokuDB::LiveObjects';
-use ok 'KiokuDB::Entry';
+use KiokuDB::LiveObjects;
+use KiokuDB::Entry;
 
 {
     package KiokuDB_Test_Foo;

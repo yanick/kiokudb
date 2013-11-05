@@ -5,7 +5,7 @@ use warnings;
 
 use Test::More;
 
-use ok 'KiokuDB::Test::Digested';
+use KiokuDB::Test::Digested;
 
 my $foo = KiokuDB::Test::Digested->new(
     foo => "blaitty4",

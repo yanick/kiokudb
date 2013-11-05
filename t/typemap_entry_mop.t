@@ -9,13 +9,13 @@ use Test::Moose;
 use Scalar::Util qw(refaddr reftype blessed);
 use Try::Tiny;
 
-use ok 'KiokuDB::TypeMap::Entry::MOP';
-use ok 'KiokuDB::TypeMap::Resolver';
-use ok 'KiokuDB::Collapser';
-use ok 'KiokuDB::Linker';
-use ok 'KiokuDB::LiveObjects';
-use ok 'KiokuDB::Backend::Hash';
-use ok 'KiokuDB::Role::ID';
+use KiokuDB::TypeMap::Entry::MOP;
+use KiokuDB::TypeMap::Resolver;
+use KiokuDB::Collapser;
+use KiokuDB::Linker;
+use KiokuDB::LiveObjects;
+use KiokuDB::Backend::Hash;
+use KiokuDB::Role::ID;
 
 use constant HAVE_MX_STORAGE => try { require MooseX::Storage::Meta::Attribute::Trait::DoNotSerialize };
 
