@@ -6,6 +6,9 @@ use warnings;
 use Test::More;
 use Test::Exception;
 
+my $preloaded;
+BEGIN { $preloaded = !!$INC{'KiokuDB/Test/Employee.pm'} }
+
 use KiokuDB;
 
 my $dir = KiokuDB->connect("hash");
@@ -429,7 +432,10 @@ sub blah { 42 }
     {
         my $s = $dir->new_scope;
 
-        ok( !exists($INC{"KiokuDB/Test/Employee.pm"}), "Employee.pm not loaded" );
+        SKIP: {
+            skip "doesn't work when preloading", 1 if $preloaded;
+            ok( !exists($INC{"KiokuDB/Test/Employee.pm"}), "Employee.pm not loaded" );
+        }
 
         my $sub = $dir->lookup("lalala");
 
