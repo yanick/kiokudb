@@ -3,7 +3,7 @@
 use strict;
 use warnings;
 
-use Test::More tests => 12;
+use Test::More;
 
 sub check_role ($) {
     my $role = shift;
@@ -29,4 +29,4 @@ SKIP: {
 
 check_role 'KiokuDB::Role::UUIDs';
 
-
+done_testing;
