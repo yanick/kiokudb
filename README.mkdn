@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/kiokudb/kiokudb.png?branch=master)](https://travis-ci.org/kiokudb/kiokudb)
+
 # RESOURCES
 
 * [#kiokudb](irc://irc.perl.org/#kiokudb) & [#moose](irc://irc.perl.org/#moose) on irc.perl.org
