@@ -1,5 +1,6 @@
 package KiokuDB::Set::Loaded;
 use Moose;
+# ABSTRACT: Implementation of loaded sets
 
 use Carp qw(croak);
 
@@ -38,10 +39,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::Set::Loaded - Implementation of loaded sets
 
 =head1 SYNOPSIS
 

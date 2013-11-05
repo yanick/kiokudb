@@ -1,5 +1,6 @@
 package KiokuDB::TypeMap::Entry::StorableHook;
 use Moose;
+# ABSTRACT: Reuse existing Storable hooks for KiokuDB storage.
 
 use Scalar::Util qw(reftype);
 use Carp qw(croak);
@@ -223,11 +224,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::TypeMap::Entry::StorableHook - Reuse existing L<Storable> hooks for
-L<KiokuDB> storage.
 
 =head1 SYNOPSIS
 

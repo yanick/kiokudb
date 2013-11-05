@@ -1,5 +1,6 @@
 package KiokuDB::Backend::Hash;
 use Moose;
+# ABSTRACT: In memory backend for testing purposes.
 
 use Data::Stream::Bulk::Util qw(bulk);
 
@@ -78,10 +79,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::Backend::Hash - In memory backend for testing purposes.
 
 =head1 SYNOPSIS
 

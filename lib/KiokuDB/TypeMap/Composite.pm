@@ -1,5 +1,6 @@
 package KiokuDB::TypeMap::Composite;
 use Moose::Role;
+# ABSTRACT: A role for KiokuDB::TypeMaps created out of many smaller typemaps
 
 use KiokuDB::TypeMap;
 
@@ -133,11 +134,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::TypeMap::Composite - A role for L<KiokuDB::TypeMaps> created out of
-many smaller typemaps
 
 =head1 SYNOPSIS
 

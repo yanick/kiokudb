@@ -1,5 +1,6 @@
 package KiokuDB::Backend;
 use Moose::Role;
+# ABSTRACT: Backend interface role
 
 use Moose::Util::TypeConstraints;
 use Try::Tiny;
@@ -59,10 +60,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::Backend - Backend interface role
 
 =head1 SYNOPSIS
 

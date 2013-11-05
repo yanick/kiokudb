@@ -1,5 +1,6 @@
 package KiokuDB::Backend::Role::Clear;
 use Moose::Role;
+# ABSTRACT: Backend clearing api
 
 use namespace::clean -except => 'meta';
 
@@ -10,10 +11,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::Backend::Role::Clear - Backend clearing api
 
 =head1 SYNOPSIS
 

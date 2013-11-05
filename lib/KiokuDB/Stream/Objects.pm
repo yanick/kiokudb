@@ -1,5 +1,6 @@
 package KiokuDB::Stream::Objects;
 use Moose;
+# ABSTRACT: Data::Stream::Bulk with live object management.
 
 use namespace::clean -except => 'meta';
 
@@ -51,7 +52,7 @@ has _no_scope => (
     is  => "rw",
 );
 
-with qw(Data::Stream::Bulk) => { -excludes => 'loaded' };
+with qw(Data::Stream::Bulk) => { -version => 0.08, -excludes => 'loaded' };
 
 sub next {
     my $self = shift;
@@ -86,10 +87,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::Stream::Objects - L<Data::Stream::Bulk> with live object management.
 
 =head1 DESCRIPTION
 

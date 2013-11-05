@@ -1,5 +1,6 @@
 package KiokuDB::TypeMap::Entry::Naive;
 use Moose;
+# ABSTRACT: A typemap entry for "simple" objects
 
 no warnings 'recursion';
 
@@ -43,10 +44,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::TypeMap::Entry::Naive - A typemap entry for "simple" objects
 
 =head1 SYNOPSIS
 

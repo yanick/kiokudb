@@ -1,5 +1,6 @@
 package KiokuDB::Thunk;
 use Moose;
+# ABSTRACT: Internal only placeholder for deferred objects
 
 use namespace::clean -except => 'meta';
 
@@ -53,10 +54,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::Thunk - Internal only placeholder for deferred objects
 
 =head1 SYNOPSIS
 

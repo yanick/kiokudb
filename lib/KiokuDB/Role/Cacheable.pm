@@ -1,7 +1,7 @@
 package KiokuDB::Role::Cacheable;
 use Moose::Role;
 
-use namespace::autoclean;
+use namespace::clean -except => 'meta';
 
 
 

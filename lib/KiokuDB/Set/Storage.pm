@@ -1,5 +1,6 @@
 package KiokuDB::Set::Storage;
 use Moose::Role;
+# ABSTRACT: Role for KiokuDB::Sets that are tied to storage.
 
 use Set::Object;
 
@@ -12,10 +13,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::Set::Storage - Role for L<KiokuDB::Set>s that are tied to storage.
 
 =head1 SYNOPSIS
 

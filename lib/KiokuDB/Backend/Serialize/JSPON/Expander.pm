@@ -1,5 +1,6 @@
 package KiokuDB::Backend::Serialize::JSPON::Expander;
 use Moose;
+# ABSTRACT: Inflate JSPON to entry data.
 
 use Carp qw(croak);
 use Scalar::Util qw(weaken);
@@ -156,11 +157,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::Backend::Serialize::JSPON::Expander - Inflate JSPON to entry
-data.
 
 =head1 SYNOPSIS
 

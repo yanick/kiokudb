@@ -1,5 +1,6 @@
 package KiokuDB::TypeMap::Entry::Std::Intrinsic;
 use Moose::Role;
+# ABSTRACT: Provides a compile_collapse implementation.
 
 no warnings 'recursion';
 
@@ -58,11 +59,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::TypeMap::Entry::Std::Intrinsic - Provides a compile_collapse
-implementation.
 
 =head1 SYNOPSIS
 

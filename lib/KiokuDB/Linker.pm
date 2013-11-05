@@ -1,5 +1,6 @@
 package KiokuDB::Linker;
 use Moose;
+# ABSTRACT: Relinks live objects from storage entries
 
 # perf improvements:
 # use a queue of required objects, queue up references, and bulk fetch
@@ -383,10 +384,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::Linker - Relinks live objects from storage entries
 
 =head1 SYNOPSIS
 

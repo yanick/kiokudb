@@ -1,5 +1,6 @@
 package KiokuDB::GIN;
 use Moose::Role;
+# ABSTRACT: Gin assisted recollection
 
 use namespace::clean -except => 'meta';
 
@@ -40,10 +41,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::GIN - Gin assisted recollection
 
 =head1 SYNOPSIS
 

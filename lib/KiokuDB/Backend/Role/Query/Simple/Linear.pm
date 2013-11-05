@@ -1,5 +1,6 @@
 package KiokuDB::Backend::Role::Query::Simple::Linear;
 use Moose::Role;
+# ABSTRACT: Query::Simple implemented with a linear scan of all entries.
 
 use namespace::clean -except => 'meta';
 
@@ -27,11 +28,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::Backend::Role::Query::Simple::Linear - Query::Simple implemented with
-a linear scan of all entries.
 
 =head1 SYNOPSIS
 

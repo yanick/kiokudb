@@ -1,11 +1,12 @@
 package KiokuDB::Entry;
 use Moose;
+# ABSTRACT: An entry in the database
 
 use Moose::Util::TypeConstraints;
 
 use namespace::clean -except => 'meta';
 
-with qw(MooseX::Clone);
+with 'MooseX::Clone' => { -version => 0.04 };
 
 has id => (
     isa => "Str",
@@ -306,10 +307,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::Entry - An entry in the database
 
 =head1 SYNOPSIS
 

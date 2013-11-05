@@ -1,5 +1,6 @@
 package KiokuDB::LiveObjects::Scope;
 use Moose;
+# ABSTRACT: Scope helper object
 
 use namespace::clean -except => 'meta';
 
@@ -62,10 +63,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::LiveObjects::Scope - Scope helper object
 
 =head1 SYNOPSIS
 

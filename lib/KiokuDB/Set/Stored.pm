@@ -1,5 +1,6 @@
 package KiokuDB::Set::Stored;
 use Moose;
+# ABSTRACT: Stored representation of KiokuDB::Set objects.
 
 use namespace::clean -except => 'meta';
 
@@ -14,10 +15,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::Set::Stored - Stored representation of L<KiokuDB::Set> objects.
 
 =head1 SYNOPSIS
 

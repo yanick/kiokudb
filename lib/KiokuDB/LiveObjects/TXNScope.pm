@@ -1,5 +1,6 @@
 package KiokuDB::LiveObjects::TXNScope;
 use Moose;
+# ABSTRACT: Transaction scope.
 
 use Scalar::Util qw(weaken);
 
@@ -57,10 +58,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::LiveObjects::TXNScope - Transaction scope.
 
 =head1 SYNOPSIS
 

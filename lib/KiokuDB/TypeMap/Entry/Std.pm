@@ -1,5 +1,6 @@
 package KiokuDB::TypeMap::Entry::Std;
 use Moose::Role;
+# ABSTRACT: Role for more easily specifying collapse/expand methods
 
 use KiokuDB::TypeMap::Entry::Compiled;
 
@@ -18,10 +19,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::TypeMap::Entry::Std - Role for more easily specifying collapse/expand methods
 
 =head1 SYNOPSIS
 

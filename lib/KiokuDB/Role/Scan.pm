@@ -1,5 +1,6 @@
 package KiokuDB::Role::Scan;
-use MooseX::Role::Parameterized;
+use MooseX::Role::Parameterized 0.10;
+# ABSTRACT: A role for entry scanning.
 
 use namespace::clean -except => 'meta';
 
@@ -96,10 +97,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::Role::Scan - A role for entry scanning.
 
 =head1 SYNOPSIS
 

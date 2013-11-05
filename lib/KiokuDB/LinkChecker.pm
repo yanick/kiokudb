@@ -1,5 +1,6 @@
 package KiokuDB::LinkChecker;
 use Moose;
+# ABSTRACT: Reference consistency checker
 
 use KiokuDB::LinkChecker::Results;
 
@@ -51,10 +52,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::LinkChecker - Reference consistency checker
 
 =head1 SYNOPSIS
 

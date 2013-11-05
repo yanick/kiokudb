@@ -1,5 +1,6 @@
 package KiokuDB::Collapser;
 use Moose;
+# ABSTRACT: Collapse object hierarchies to entry data
 
 no warnings 'recursion';
 
@@ -15,7 +16,7 @@ use KiokuDB::Reference;
 use KiokuDB::Collapser::Buffer;
 use KiokuDB::Error::UnknownObjects;
 
-use Data::Visitor 0.18;
+use Data::Visitor 0.24;
 
 use Set::Object qw(set);
 
@@ -408,11 +409,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::Collapser - Collapse object hierarchies to entry
-data
 
 =head1 SYNOPSIS
 

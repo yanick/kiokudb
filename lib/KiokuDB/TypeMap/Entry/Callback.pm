@@ -1,5 +1,6 @@
 package KiokuDB::TypeMap::Entry::Callback;
 use Moose;
+# ABSTRACT: Callback based inflation/deflation of objects
 
 no warnings 'recursion';
 
@@ -133,10 +134,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::TypeMap::Entry::Callback - Callback based inflation/deflation of objects
 
 =head1 SYNOPSIS
 

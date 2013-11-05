@@ -1,5 +1,6 @@
 package KiokuDB::Role::ID::Content;
 use Moose::Role;
+# ABSTRACT: Content dependent object IDs
 
 use namespace::clean -except => 'meta';
 
@@ -13,10 +14,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::Role::ID::Content - Content dependent object IDs
 
 =head1 SYNOPSIS
 

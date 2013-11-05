@@ -1,5 +1,6 @@
 package KiokuDB::TypeMap::Entry::Std::Compile;
 use Moose::Role;
+# ABSTRACT: Provides a compile implementation
 
 use KiokuDB::TypeMap::Entry::Compiled;
 
@@ -38,10 +39,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::TypeMap::Entry::Std::Compile - Provides a compile implementation
 
 =head1 SYNOPSIS
 

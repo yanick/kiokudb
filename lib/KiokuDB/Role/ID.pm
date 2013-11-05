@@ -1,5 +1,6 @@
 package KiokuDB::Role::ID;
 use Moose::Role;
+# ABSTRACT: A role for objects who choose their own ID.
 
 use namespace::clean -except => 'meta';
 
@@ -10,10 +11,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::Role::ID - A role for objects who choose their own ID.
 
 =head1 SYNOPSIS
 

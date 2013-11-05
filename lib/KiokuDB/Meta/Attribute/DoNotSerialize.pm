@@ -1,5 +1,6 @@
 package KiokuDB::Meta::Attribute::DoNotSerialize;
 use Moose::Role;
+# ABSTRACT: Trait for skipped attributes
 
 use Moose::Util qw(does_role);
 
@@ -12,10 +13,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::Meta::Attribute::DoNotSerialize - Trait for skipped attributes
 
 =head1 SYNOPSIS
 

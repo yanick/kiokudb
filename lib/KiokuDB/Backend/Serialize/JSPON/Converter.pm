@@ -1,5 +1,6 @@
 package KiokuDB::Backend::Serialize::JSPON::Converter;
 use Moose::Role;
+# ABSTRACT: Common functionality for JSPON expansion/collapsing
 
 use namespace::clean -except => 'meta';
 
@@ -109,11 +110,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::Backend::Serialize::JSPON::Converter - Common functionality for JSPON
-expansion/collapsing
 
 =head1 SYNOPSIS
 

@@ -1,5 +1,6 @@
 package KiokuDB::Role::Verbosity;
 use Moose::Role;
+# ABSTRACT: A role for printing diagnosis to STDERR
 
 use namespace::clean -except => 'meta';
 
@@ -26,10 +27,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::Role::Verbosity - A role for printing diagnosis to STDERR
 
 =head1 SYNOPSIS
 

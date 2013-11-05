@@ -1,9 +1,10 @@
 package KiokuDB::Backend::Serialize::JSPON::Collapser;
 use Moose;
+# ABSTRACT: Collapse entry data to JSPON compliant structures
 
 use KiokuDB::Entry;
 use KiokuDB::Reference;
-use JSON;
+use JSON 2.12;
 
 use namespace::clean -except => 'meta';
 
@@ -80,11 +81,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::Backend::Serialize::JSPON::Collapser - Collapse entry data to
-JSPON compliant structures
 
 =head1 SYNOPSIS
 

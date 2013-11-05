@@ -1,5 +1,6 @@
 package KiokuDB::Backend::Role::TXN::Nested;
 use Moose::Role;
+# ABSTRACT: Informational role for backends supporting rollback of nested transactions.
 
 use namespace::clean -except => 'meta';
 
@@ -8,11 +9,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::Backend::Role::TXN::Nested - Informational role for backends
-supporting rollback of nested transactions.
 
 =head1 DESCRIPTION
 

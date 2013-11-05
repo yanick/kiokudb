@@ -1,5 +1,6 @@
 package KiokuDB::Role::Immutable;
 use Moose::Role;
+# ABSTRACT: A role for objects that are never updated.
 
 use namespace::clean -except => 'meta';
 
@@ -10,10 +11,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::Role::Immutable - A role for objects that are never updated.
 
 =head1 SYNOPSIS
 

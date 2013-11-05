@@ -1,5 +1,6 @@
 package KiokuDB::TypeMap::Entry::Std::ID;
 use Moose::Role;
+# ABSTRACT: Provides a default compile_id method
 
 use namespace::clean -except => 'meta';
 
@@ -14,10 +15,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::TypeMap::Entry::Std::ID - Provides a default compile_id method
 
 =head1 SYNOPSIS
 

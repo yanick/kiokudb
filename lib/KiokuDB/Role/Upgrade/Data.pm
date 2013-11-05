@@ -1,5 +1,6 @@
 package KiokuDB::Role::Upgrade::Data;
 use Moose::Role;
+# ABSTRACT: Classes that provide their own upgrade routine.
 
 use namespace::clean;
 
@@ -12,10 +13,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::Role::Upgrade::Data - Classes that provide their own upgrade routine.
 
 =head1 SYNOPSIS
 

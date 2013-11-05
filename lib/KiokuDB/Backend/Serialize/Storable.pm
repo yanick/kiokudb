@@ -1,5 +1,6 @@
 package KiokuDB::Backend::Serialize::Storable;
 use Moose::Role;
+# ABSTRACT: Storable based serialization of KiokuDB::Entry objects.
 
 use Storable qw(nfreeze thaw nstore_fd fd_retrieve);
 
@@ -44,11 +45,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::Backend::Serialize::Storable - L<Storable> based serialization of
-L<KiokuDB::Entry> objects.
 
 =head1 SYNOPSIS
 

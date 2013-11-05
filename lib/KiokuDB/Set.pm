@@ -1,5 +1,6 @@
 package KiokuDB::Set;
 use Moose::Role 'requires', 'has' => { -as => "attr" }; # need a 'has' method
+# ABSTRACT: Set::Object wrapper for KiokuDB with lazy loading.
 
 use Moose::Util::TypeConstraints 'coerce', 'from', 'via';
 
@@ -143,10 +144,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::Set - L<Set::Object> wrapper for KiokuDB with lazy loading.
 
 =head1 SYNOPSIS
 

@@ -1,5 +1,6 @@
 package KiokuDB::Backend::Serialize::Delegate;
 use Moose::Role;
+# ABSTRACT: Use a KiokuDB::Serializer object instead of a role to handle serialization in a backend.
 
 use KiokuDB::Serializer;
 
@@ -20,11 +21,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::Backend::Serialize::Delegate - Use a L<KiokuDB::Serializer> object
-instead of a role to handle serialization in a backend.
 
 =head1 SYNOPSIS
 

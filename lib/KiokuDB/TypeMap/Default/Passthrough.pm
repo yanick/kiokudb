@@ -1,5 +1,6 @@
 package KiokuDB::TypeMap::Default::Passthrough;
 use Moose::Role;
+# ABSTRACT: A KiokuDB::TypeMap::Default instance suitable for Storable.
 
 use namespace::clean -except => 'meta';
 
@@ -82,11 +83,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::TypeMap::Default::Passthrough - A L<KiokuDB::TypeMap::Default>
-instance suitable for L<Storable>.
 
 =head1 DESCRIPTION
 

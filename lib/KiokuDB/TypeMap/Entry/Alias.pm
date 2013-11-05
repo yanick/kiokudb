@@ -1,5 +1,6 @@
 package KiokuDB::TypeMap::Entry::Alias;
 use Moose;
+# ABSTRACT: An alias in the typemap to another entry
 
 use namespace::clean -except => 'meta';
 
@@ -16,10 +17,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::TypeMap::Entry::Alias - An alias in the typemap to another entry
 
 =head1 SYNOPSIS
 

@@ -1,5 +1,6 @@
 package KiokuDB::Backend::Role::TXN;
 use Moose::Role;
+# ABSTRACT: Backend level transaction support.
 
 use Carp qw(croak);
 use Try::Tiny;
@@ -53,10 +54,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::Backend::Role::TXN - Backend level transaction support.
 
 =head1 SYNOPSIS
 

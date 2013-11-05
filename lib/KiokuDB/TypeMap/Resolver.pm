@@ -1,5 +1,6 @@
 package KiokuDB::TypeMap::Resolver;
 use Moose;
+# ABSTRACT: Caching resolver for KiokuDB::TypeMap
 
 use Carp qw(croak);
 
@@ -119,10 +120,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::TypeMap::Resolver - Caching resolver for L<KiokuDB::TypeMap>
 
 =head1 SYNOPSIS
 

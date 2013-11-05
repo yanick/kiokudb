@@ -3,6 +3,7 @@ use Moose;
 
 use Carp qw(croak);
 use Scalar::Util qw(refaddr);
+use PadWalker 1.9;
 
 no warnings 'recursion';
 
@@ -15,7 +16,6 @@ sub compile_collapse_body {
 
     require B;
     require B::Deparse;
-    require PadWalker;
 
     return sub {
         my ( $collapser, %args ) = @_;
@@ -98,8 +98,6 @@ sub _deparse {
 
 sub compile_expand {
     my $self = shift;
-
-    require PadWalker;
 
     return sub {
         my ( $linker, $entry ) = @_;

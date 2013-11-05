@@ -1,5 +1,6 @@
 package KiokuDB::TypeMap::Default::Canonical;
 use Moose::Role;
+# ABSTRACT: A KiokuDB::TypeMap::Default implementation that canonicalizes the standard types to simplified versions.
 
 use namespace::clean -except => 'meta';
 
@@ -83,11 +84,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::TypeMap::Default::Canonical - A L<KiokuDB::TypeMap::Default>
-implementation that canonicalizes the standard types to simplified versions.
 
 =head1 DESCRIPTION
 

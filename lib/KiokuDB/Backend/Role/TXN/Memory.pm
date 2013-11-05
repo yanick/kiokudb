@@ -1,5 +1,6 @@
 package KiokuDB::Backend::Role::TXN::Memory;
 use Moose::Role;
+# ABSTRACT: In memory transactions.
 
 use Carp qw(croak);
 
@@ -200,10 +201,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::Backend::Role::TXN::Memory - In memory transactions.
 
 =head1 SYNOPSIS
 

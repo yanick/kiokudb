@@ -1,5 +1,6 @@
 package KiokuDB::TypeMap::Default;
 use Moose::Role;
+# ABSTRACT: A standard KiokuDB::TypeMap with predefined entries.
 
 use namespace::clean -except => 'meta';
 
@@ -79,11 +80,6 @@ sub _build_tie_typemap {
 __PACKAGE__
 
 __END__
-
-=head1 NAME
-
-KiokuDB::TypeMap::Default - A standard L<KiokuDB::TypeMap> with predefined
-entries.
 
 =head1 SYNOPSIS
 

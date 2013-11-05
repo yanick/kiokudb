@@ -1,5 +1,6 @@
 package KiokuDB::TypeMap;
 use Moose;
+# ABSTRACT: Class to collapsing/expanding logic.
 
 use Carp qw(croak);
 use Try::Tiny;
@@ -173,10 +174,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::TypeMap - Class to collapsing/expanding logic.
 
 =head1 SYNOPSIS
 

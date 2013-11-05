@@ -2,7 +2,7 @@
 
 =head1 NAME
 
-KiokuDB::Tutorial - Getting started with L<KiokuDB>
+KiokuDB::Tutorial - Getting started with KiokuDB
 
 =head1 INSTALLATION
 

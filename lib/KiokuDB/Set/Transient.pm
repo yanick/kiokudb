@@ -1,5 +1,6 @@
 package KiokuDB::Set::Transient;
 use Moose;
+# ABSTRACT: Implementation of in memory sets.
 
 use Carp qw(croak);
 
@@ -28,10 +29,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::Set::Transient - Implementation of in memory sets.
 
 =head1 SYNOPSIS
 

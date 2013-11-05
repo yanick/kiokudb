@@ -1,5 +1,6 @@
 package KiokuDB::Meta::Instance;
 use Moose::Role;
+# ABSTRACT: Moose::Meta::Instance level support for lazy loading.
 
 use namespace::clean -except => 'meta';
 
@@ -36,10 +37,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::Meta::Instance - L<Moose::Meta::Instnace> level support for lazy loading.
 
 =head1 SYNOPSIS
 

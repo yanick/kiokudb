@@ -3,6 +3,8 @@ use Moose;
 
 use namespace::clean -except => 'meta';
 
+use KiokuDB::GC::Naive::Mark;
+
 with 'KiokuDB::Role::Scan' => { result_class => "KiokuDB::GC::Naive::Sweep::Results" };
 
 {

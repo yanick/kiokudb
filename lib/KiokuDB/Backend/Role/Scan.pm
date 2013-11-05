@@ -1,5 +1,6 @@
 package KiokuDB::Backend::Role::Scan;
 use Moose::Role;
+# ABSTRACT: Root set iteration
 
 sub entries_to_ids {
     my $stream = shift;
@@ -40,10 +41,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::Backend::Role::Scan - Root set iteration
 
 =head1 SYNOPSIS
 

@@ -1,5 +1,6 @@
 package KiokuDB::TypeMap::Entry::MOP;
 use Moose;
+# ABSTRACT: A KiokuDB::TypeMap entry for objects with a metaclass.
 
 use Scalar::Util qw(refaddr);
 use Carp qw(croak);
@@ -486,11 +487,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::TypeMap::Entry::MOP - A L<KiokuDB::TypeMap> entry for objects with a
-metaclass.
 
 =head1 SYNOPSIS
 

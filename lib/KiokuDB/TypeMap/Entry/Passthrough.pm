@@ -1,5 +1,6 @@
 package KiokuDB::TypeMap::Entry::Passthrough;
 use Moose;
+# ABSTRACT: A typemap entry of objects that will be serialized by the backend.
 
 use Carp qw(croak);
 
@@ -73,11 +74,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::TypeMap::Entry::Passthrough - A typemap entry of objects that will be
-serialized by the backend.
 
 =head1 SYNOPSIS
 

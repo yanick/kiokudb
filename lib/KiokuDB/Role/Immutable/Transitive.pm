@@ -1,7 +1,8 @@
 package KiokuDB::Role::Immutable::Transitive;
 use Moose::Role;
+# ABSTRACT: A role for immutable objects that only point at other such objects.
 
-use namespace::autoclean;
+use namespace::clean -except => 'meta';
 
 with qw(
     KiokuDB::Role::Immutable
@@ -16,11 +17,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::Role::Immutable::Transitive - A role for immutable objects that only
-point at other such objects.
 
 =head1 SYNOPSIS
 

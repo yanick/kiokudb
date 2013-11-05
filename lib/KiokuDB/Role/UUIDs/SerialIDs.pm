@@ -1,5 +1,6 @@
 package KiokuDB::Role::UUIDs::SerialIDs;
 use Moose::Role;
+# ABSTRACT: Serial ID assignment based on a global counter.
 
 use namespace::clean -except => 'meta';
 
@@ -11,11 +12,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::Role::UUIDs::SerialIDs - Serial ID assignment based on a global
-counter.
 
 =head1 SYNOPSIS
 

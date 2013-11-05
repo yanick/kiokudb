@@ -1,5 +1,6 @@
 package KiokuDB::Set::Deferred;
 use Moose;
+# ABSTRACT: Implementation of deferred set.
 
 use Carp qw(croak);
 
@@ -172,10 +173,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::Set::Deferred - Implementation of deferred set.
 
 =head1 SYNOPSIS
 

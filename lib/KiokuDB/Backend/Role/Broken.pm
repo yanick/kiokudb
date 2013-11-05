@@ -1,5 +1,6 @@
 package KiokuDB::Backend::Role::Broken;
 use Moose::Role;
+# ABSTRACT: Skip test fixtures
 
 use namespace::clean -except => 'meta';
 
@@ -10,10 +11,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::Backend::Role::Broken - Skip test fixtures
 
 =head1 SYNOPSIS
 

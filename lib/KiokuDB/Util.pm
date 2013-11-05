@@ -1,10 +1,12 @@
 package KiokuDB::Util;
 use strict;
 use warnings;
+# ABSTRACT: Utility functions for working with KiokuDB
 
 use Path::Class;
 
 use Carp qw(croak);
+use MooseX::YAML 0.04;
 use Scalar::Util qw(blessed);
 
 use namespace::clean;
@@ -77,8 +79,6 @@ sub load_config {
         $config_file->openr;
     }
 
-
-    require MooseX::YAML;
     MooseX::YAML::LoadFile($config_file);
 }
 
@@ -138,8 +138,6 @@ sub load_yaml_files {
     my ( @files ) = @_;
 
     my @objects;
-
-    require MooseX::YAML;
 
     foreach my $file ( @files ) {
         my @data = MooseX::YAML::LoadFile($file);
@@ -202,10 +200,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::Util - Utility functions for working with KiokuDB
 
 =head1 SYNOPSIS
 

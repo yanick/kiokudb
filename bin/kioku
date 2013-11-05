@@ -1,6 +1,7 @@
 #!/usr/bin/perl
 use strict;
 use warnings;
+# PODNAME: kioku
 
 use KiokuDB;
 use Try::Tiny;

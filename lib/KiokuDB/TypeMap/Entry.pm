@@ -1,5 +1,6 @@
 package KiokuDB::TypeMap::Entry;
 use Moose::Role;
+# ABSTRACT: Role for KiokuDB::TypeMap entries
 
 use namespace::clean -except => 'meta';
 
@@ -10,10 +11,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::TypeMap::Entry - Role for L<KiokuDB::TypeMap> entries
 
 =head1 SYNOPSIS
 

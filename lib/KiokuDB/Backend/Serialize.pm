@@ -1,5 +1,6 @@
 package KiokuDB::Backend::Serialize;
 use Moose::Role;
+# ABSTRACT: Serialization role for backends
 
 use Moose::Util::TypeConstraints;
 
@@ -33,10 +34,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::Backend::Serialize - Serialization role for backends
 
 =head1 SYNOPSIS
 

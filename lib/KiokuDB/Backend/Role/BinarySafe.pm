@@ -1,5 +1,6 @@
 package KiokuDB::Backend::Role::BinarySafe;
 use Moose::Role;
+# ABSTRACT: An informational role for binary data safe backends.
 
 use namespace::clean -except => 'meta';
 
@@ -8,11 +9,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::Backend::Role::BinarySafe - An informational role for binary data safe
-backends.
 
 =head1 SYNOPSIS
 

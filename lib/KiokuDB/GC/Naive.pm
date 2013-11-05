@@ -1,5 +1,6 @@
 package KiokuDB::GC::Naive;
 use Moose;
+# ABSTRACT: Naive mark and sweep garbage collection
 
 use KiokuDB::GC::Naive::Mark;
 use KiokuDB::GC::Naive::Sweep;
@@ -77,10 +78,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::GC::Naive - Naive mark and sweep garbage collection
 
 =head1 SYNOPSIS
 

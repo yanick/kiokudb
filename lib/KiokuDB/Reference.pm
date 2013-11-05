@@ -1,5 +1,6 @@
 package KiokuDB::Reference;
 use Moose;
+# ABSTRACT: A symbolic reference to another KiokuDB::Entry.
 
 use namespace::clean -except => 'meta';
 
@@ -41,10 +42,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::Reference - A symbolic reference to another L<KiokuDB::Entry>.
 
 =head1 SYNOPSIS
 

@@ -1,5 +1,6 @@
 package KiokuDB::Meta::Attribute::Lazy;
 use Moose::Role;
+# ABSTRACT: Trait for lazy loaded attributes
 
 use Moose::Util qw(does_role);
 
@@ -22,10 +23,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::Meta::Attribute::Lazy - Trait for lazy loaded attributes
 
 =head1 SYNOPSIS
 

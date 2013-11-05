@@ -1,5 +1,6 @@
 package KiokuDB::TypeMap::ClassBuilders;
 use Moose;
+# ABSTRACT: A typemap for standard class builders
 
 use namespace::clean -except => 'meta';
 
@@ -49,10 +50,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::TypeMap::ClassBuilders - A typemap for standard class builders
 
 =head1 SYNOPSIS
 

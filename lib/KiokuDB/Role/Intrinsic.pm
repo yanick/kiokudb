@@ -1,5 +1,6 @@
 package KiokuDB::Role::Intrinsic;
 use Moose::Role;
+# ABSTRACT: A role for value objects
 
 use namespace::clean -except => 'meta';
 
@@ -10,10 +11,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::Role::Intrinsic - A role for value objects
 
 =head1 SYNOPSIS
 

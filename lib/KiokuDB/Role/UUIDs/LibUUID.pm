@@ -1,7 +1,7 @@
 package KiokuDB::Role::UUIDs::LibUUID;
 use Moose::Role;
 
-use Data::UUID::LibUUID;
+use Data::UUID::LibUUID 0.05;
 
 use namespace::clean -except => 'meta';
 

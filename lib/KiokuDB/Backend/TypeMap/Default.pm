@@ -1,5 +1,6 @@
 package KiokuDB::Backend::TypeMap::Default;
 use Moose::Role;
+# ABSTRACT: A role for backends with a default typemap
 
 use namespace::clean -except => 'meta';
 
@@ -17,10 +18,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::Backend::TypeMap::Default - A role for backends with a default typemap
 
 =head1 SYNOPSIS
 

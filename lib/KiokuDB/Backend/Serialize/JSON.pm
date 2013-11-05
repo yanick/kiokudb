@@ -1,5 +1,6 @@
 package KiokuDB::Backend::Serialize::JSON;
 use Moose::Role;
+# ABSTRACT: Role to serialize entries to JSON strings with KiokuDB::Backend::Serialize::JSPON semantics
 
 use IO::Handle;
 
@@ -82,11 +83,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::Backend::Serialize::JSON - Role to serialize entries to JSON strings
-with L<KiokuDB::Backend::Serialize::JSPON> semantics
 
 =head1 SYNOPSIS
 

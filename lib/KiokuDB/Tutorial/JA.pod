@@ -1,3 +1,4 @@
+# PODNAME: KiokuDB::Tutorial::JA
 =encoding utf8
 
 =pod

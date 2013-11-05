@@ -1,12 +1,14 @@
 package KiokuDB::LiveObjects;
 use Moose;
+# ABSTRACT: Live object set tracking
 
 use Scalar::Util qw(weaken refaddr);
 use KiokuDB::LiveObjects::Guard;
 use Hash::Util::FieldHash::Compat qw(fieldhash);
 use Carp qw(croak);
 BEGIN { local $@; eval 'use Devel::PartialDump qw(croak)' };
-use Set::Object;
+use Set::Object 1.26;
+use Cache::Ref 0.02;
 
 use KiokuDB::LiveObjects::Scope;
 use KiokuDB::LiveObjects::TXNScope;
@@ -537,10 +539,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::LiveObjects - Live object set tracking
 
 =head1 SYNOPSIS
 

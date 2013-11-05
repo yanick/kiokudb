@@ -1,5 +1,6 @@
 package KiokuDB::Backend::Serialize::JSPON;
 use Moose::Role;
+# ABSTRACT: JSPON serialization helper
 
 use KiokuDB::Backend::Serialize::JSPON::Expander;
 use KiokuDB::Backend::Serialize::JSPON::Collapser;
@@ -42,10 +43,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::Backend::Serialize::JSPON - JSPON serialization helper
 
 =head1 SYNOPSIS
 

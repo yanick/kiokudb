@@ -1,5 +1,6 @@
 package KiokuDB::Role::API;
 use Moose::Role;
+# ABSTRACT: Role for KiokuDB api (used to setup delegations).
 
 use namespace::clean -except => 'meta';
 
@@ -53,10 +54,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::Role::API - Role for L<KiokuDB> api (used to setup delegations).
 
 =head1 SYNOPSIS
 

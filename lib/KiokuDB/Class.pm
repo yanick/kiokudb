@@ -1,5 +1,7 @@
 package KiokuDB::Class;
 use Moose::Exporter;
+# ABSTRACT: KiokuDB specific metaclass
+
 use Moose::Util::MetaRole;
 
 use KiokuDB::Meta::Instance;
@@ -31,10 +33,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::Class - L<KiokuDB> specific metaclass
 
 =head1 SYNOPSIS
 

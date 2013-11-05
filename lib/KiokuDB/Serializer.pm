@@ -1,5 +1,6 @@
 package KiokuDB::Serializer;
 use Moose::Role;
+# ABSTRACT: Standalone serializer object
 
 use Carp qw(croak);
 
@@ -37,10 +38,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::Serializer - Standalone serializer object
 
 =head1 SYNOPSIS
 

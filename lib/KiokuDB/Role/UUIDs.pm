@@ -1,5 +1,6 @@
 package KiokuDB::Role::UUIDs;
 use Moose::Role;
+# ABSTRACT: UUID generation role.
 
 use Try::Tiny;
 
@@ -20,10 +21,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::Role::UUIDs - UUID generation role.
 
 =head1 SYNOPSIS
 

@@ -1,5 +1,6 @@
 package KiokuDB::Role::Upgrade::Handlers::Table;
 use Moose::Role;
+# ABSTRACT: A role for classes
 
 use namespace::clean;
 
@@ -24,10 +25,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::Role::Upgrade::Handlers::Table - A role for classes 
 
 =head1 SYNOPSIS
 

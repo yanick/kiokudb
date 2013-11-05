@@ -1,9 +1,10 @@
 package KiokuDB::Backend::Serialize::YAML;
 use Moose::Role;
+# ABSTRACT: YAML::XS based serialization of KiokuDB::Entry objects.
 
 use IO::Handle;
 
-use YAML::XS qw(Load Dump);
+use YAML::XS 0.30 qw(Load Dump);
 
 use namespace::clean -except => 'meta';
 
@@ -73,11 +74,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::Backend::Serialize::YAML - L<YAML::XS> based serialization of
-L<KiokuDB::Entry> objects.
 
 =head1 SYNOPSIS
 

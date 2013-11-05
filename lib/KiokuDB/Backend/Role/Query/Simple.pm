@@ -1,5 +1,6 @@
 package KiokuDB::Backend::Role::Query::Simple;
 use Moose::Role;
+# ABSTRACT: Simple query api
 
 use namespace::clean -except => 'meta';
 
@@ -30,10 +31,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::Backend::Role::Query::Simple - Simple query api
 
 =head1 SYNOPSIS
 

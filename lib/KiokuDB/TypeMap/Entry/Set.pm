@@ -1,5 +1,6 @@
 package KiokuDB::TypeMap::Entry::Set;
 use Moose;
+# ABSTRACT: A typemap entry for KiokuDB::Sets
 
 no warnings 'recursion';
 
@@ -132,10 +133,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::TypeMap::Entry::Set - A typemap entry for L<KiokuDB::Set>s
 
 =head1 DESCRIPTION
 

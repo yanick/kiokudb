@@ -1,5 +1,6 @@
 package KiokuDB::TypeMap::Shadow;
 use Moose;
+# ABSTRACT: Try a list of KiokuDB::TypeMaps in order
 
 use namespace::clean -except => 'meta';
 
@@ -30,10 +31,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-KiokuDB::TypeMap::Shadow - Try a list of L<KiokuDB::TypeMap>s in order
 
 =head1 SYNOPSIS
 

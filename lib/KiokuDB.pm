@@ -1,7 +1,6 @@
 package KiokuDB;
 use Moose;
-
-our $VERSION = "0.54";
+# ABSTRACT: Object Graph storage engine
 
 use constant SERIAL_IDS => not not our $SERIAL_IDS;
 
@@ -14,13 +13,14 @@ use KiokuDB::TypeMap::Shadow;
 use KiokuDB::TypeMap::Resolver;
 use KiokuDB::Stream::Objects;
 
+use Moose 2.0000 ();
 use Moose::Util qw(does_role);
 
 use Hash::Util::FieldHash::Compat qw(idhash);
 use Carp qw(croak);
 use Try::Tiny;
 
-use namespace::clean -except => [qw(meta SERIAL_IDS)];
+use namespace::clean 0.08 -except => [qw(meta SERIAL_IDS)];
 
 # with qw(KiokuDB::Role::API); # moved lower
 
@@ -660,10 +660,6 @@ __END__
 
 =pod
 
-=head1 NAME
-
-KiokuDB - Object Graph storage engine
-
 =head1 TUTORIAL
 
 If you're new to L<KiokuDB> check out L<KiokuDB::Tutorial>.
@@ -1210,15 +1206,5 @@ Polymorphic retrieval is possible with L<DBIx::Class::DynamicSubclass>
 
 KiokuDB is maintained using Git. Information about the repository is available
 on L<http://www.iinteractive.com/kiokudb/>
-
-=head1 AUTHOR
-
-Yuval Kogman E<lt>nothingmuch@woobling.orgE<gt>
-
-=head1 COPYRIGHT
-
-    Copyright (c) 2008, 2009 Yuval Kogman, Infinity Interactive. All
-    rights reserved This program is free software; you can redistribute
-    it and/or modify it under the same terms as Perl itself.
 
 =cut

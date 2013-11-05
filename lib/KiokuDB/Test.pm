@@ -1,6 +1,7 @@
 package KiokuDB::Test;
 use strict;
 use warnings;
+# ABSTRACT: Reusable tests for KiokuDB backend authors.
 
 use Scalar::Util qw(blessed);
 use Test::More;
@@ -38,10 +39,6 @@ sub run_all_fixtures {
 __PACKAGE__
 
 __END__
-
-=head1 NAME
-
-KiokuDB::Test - Reusable tests for L<KiokuDB> backend authors.
 
 =head1 SYNOPSIS
 
