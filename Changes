@@ -1,6 +1,8 @@
 Revision history for KiokuDB
 
 {{$NEXT}}
+
+0.55  2013-11-05
     - fix failing tests with newer versions of JSON
     - convert to dzil
 
