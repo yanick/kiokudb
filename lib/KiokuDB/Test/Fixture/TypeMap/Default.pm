@@ -28,22 +28,26 @@ use constant HAVE_MX_TRAITS         => try { require MooseX::Traits };
 use constant HAVE_MX_OP             => try { require MooseX::Object::Pluggable };
 
 {
-    package Some::Role;
+    package
+        Some::Role;
     use Moose::Role;
 
     has role_attr => ( is => "rw" );
 
-    package Some::Other::Role;
+    package
+        Some::Other::Role;
     use Moose::Role;
 
     has other_role_attr => ( is => "rw" );
 
-    package Some::Third::Role;
+    package
+        Some::Third::Role;
     use Moose::Role;
 
     sub a_role_method { "hello" }
 
-    package Some::Class;
+    package
+        Some::Class;
     use Moose;
 
     if ( KiokuDB::Test::Fixture::TypeMap::Default::HAVE_MX_TRAITS ) {
