@@ -1,6 +1,7 @@
 Revision history for KiokuDB
 
 {{$NEXT}}
+    - stop importing from multiple JSON versions
 
 0.55  2013-11-05
     - fix failing tests with newer versions of JSON
