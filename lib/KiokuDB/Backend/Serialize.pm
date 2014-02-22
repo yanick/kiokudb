@@ -2,6 +2,7 @@ package KiokuDB::Backend::Serialize;
 use Moose::Role;
 # ABSTRACT: Serialization role for backends
 
+use Class::Load ();
 use Moose::Util::TypeConstraints;
 
 use namespace::clean -except => 'meta';
@@ -18,13 +19,13 @@ my %types = (
 coerce( __PACKAGE__,
     from Str => via {
         my $class = $types{lc($_)};
-        Class::MOP::load_class($class);
+        Class::Load::load_class($class);
         $class->new;
     },
     from HashRef => via {
         my %args = %$_;
         my $class = $types{lc(delete $args{format})};
-        Class::MOP::load_class($class);
+        Class::Load::load_class($class);
         $class->new(%args);
     },
 );

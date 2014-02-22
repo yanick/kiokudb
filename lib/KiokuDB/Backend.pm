@@ -2,6 +2,7 @@ package KiokuDB::Backend;
 use Moose::Role;
 # ABSTRACT: Backend interface role
 
+use Class::Load ();
 use Moose::Util::TypeConstraints;
 use Try::Tiny;
 
@@ -13,10 +14,10 @@ coerce ( __PACKAGE__,
         my $class = delete $p{class} || die "Can't coerce backend from hash without a 'class' parameter";
 
         try {
-            Class::MOP::load_class("KiokuDB::Backend::$class");
+            Class::Load::load_class("KiokuDB::Backend::$class");
             "KiokuDB::Backend::$class"->new(%p);
         } catch {
-            Class::MOP::load_class($class);
+            Class::Load::load_class($class);
             $class->new(%p);
         };
     },
