@@ -2,6 +2,7 @@ package KiokuDB::TypeMap::Composite;
 use Moose::Role;
 # ABSTRACT: A role for KiokuDB::TypeMaps created out of many smaller typemaps
 
+use Class::Load ();
 use KiokuDB::TypeMap;
 
 use namespace::clean -except => 'meta';
@@ -63,7 +64,7 @@ sub _construct_entry {
     my $args = $self->_entry_options(@args);
 
     my $type = delete $args->{type};
-    Class::MOP::load_class($type);
+    Class::Load::load_class($type);
 
     $type->new($args);
 }

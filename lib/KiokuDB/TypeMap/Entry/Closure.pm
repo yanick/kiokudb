@@ -4,6 +4,7 @@ use Moose;
 use Carp qw(croak);
 use Scalar::Util qw(refaddr);
 use PadWalker 1.9;
+use Class::Load ();
 
 no warnings 'recursion';
 
@@ -123,7 +124,7 @@ sub compile_expand {
                 if ( defined(my $file = $data->{file}) ) {
                     require $file unless exists $INC{$file};
                 } else {
-                    Class::MOP::load_class($data->{package});
+                    Class::Load::load_class($data->{package});
                 }
 
                 unless ( defined(*{$glob}{CODE}) ) {

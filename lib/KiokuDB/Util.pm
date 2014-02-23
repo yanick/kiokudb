@@ -8,6 +8,7 @@ use Path::Class;
 use Carp qw(croak);
 use MooseX::YAML 0.04;
 use Scalar::Util qw(blessed);
+use Class::Load ();
 
 use namespace::clean;
 
@@ -50,7 +51,7 @@ sub dsn_to_backend {
         $moniker = $monikers{$moniker} || $moniker;
         my $class = "KiokuDB::Backend::$moniker";
 
-        Class::MOP::load_class($class);
+        Class::Load::load_class($class);
         return $class->new_from_dsn($rest, @args);
     } elsif ( my $args = _try_json($dsn) ) {
         my $dsn;
@@ -92,7 +93,7 @@ sub config_to_backend {
     return $backend if blessed($backend);
 
     my $backend_class = $backend->{class};
-    Class::MOP::load_class($backend_class);
+    Class::Load::load_class($backend_class);
 
     return $backend_class->new_from_dsn_params(
         ( defined($base) ? ( dir => $base->subdir("data") ) : () ),
