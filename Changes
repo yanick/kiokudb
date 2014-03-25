@@ -1,6 +1,7 @@
 Revision history for KiokuDB
 
 {{$NEXT}}
+    - stop using Class::MOP::load_class (perigrin, #4)
 
 0.56  2013-11-07
     - stop importing from multiple JSON versions
