@@ -1,6 +1,8 @@
 Revision history for KiokuDB
 
 {{$NEXT}}
+
+0.57  2014-03-25
     - stop using Class::MOP::load_class (perigrin, #4)
 
 0.56  2013-11-07
