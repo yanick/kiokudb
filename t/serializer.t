@@ -19,8 +19,8 @@ sub KiokuDB::Entry::BUILD { shift->root }; # force building of root for is_deepl
 $_->make_mutable, $_->make_immutable for KiokuDB::Entry->meta; # recreate new
 
 
-{
-    foreach my $serializer ( qw(JSON Storable), HAVE_YAML ? "YAML" : () ) {
+foreach my $serializer ( qw(JSON Storable), HAVE_YAML ? "YAML" : () ) {
+    subtest "serializer $serializer" => sub {
         my $s = "KiokuDB::Serializer::$serializer"->new;
 
         does_ok( $s, "KiokuDB::Serializer" );
